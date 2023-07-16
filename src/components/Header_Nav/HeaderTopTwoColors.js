@@ -23,11 +23,11 @@ const Header = () => {
 
                 <nav className={`${header ? 'text-primary' : 'text-primary'} flex gap-x-4 lg:gap-x-8
                 tracking-[1px] items-center` }>
-                        <a href='' className='hover:text-accent transition'> Home</a>
-                        <a href='' className='hover:text-accent transition'> L'asso</a>
-                        <a href='' className='hover:text-accent transition'> Actualités'</a>
-                        <a href='' className='hover:text-accent transition'> Les Editions</a>
-                        <a href='' className='hover:text-accent transition'> Sponsor</a>
+                        <a href='/' className='hover:text-accent transition cursor-pointer'> Home</a>
+                        <a href='/about' className='hover:text-accent transition cursor-pointer'>Asso</a>
+                        <a href='/blog' className='hover:text-accent transition'> Actualités'</a>
+                        <a href='/archives' className='hover:text-accent transition'> Les Editions</a>
+                        <a href='/sponsor' className='hover:text-accent transition'> Sponsor</a>
 
                         <button className='btn btn-sm'>Contact</button>
                 </nav>

@@ -2,9 +2,9 @@ import React from 'react';
 
 import {motion} from 'framer-motion'
 
-import {fadeIn} from '../../variants'
+import {fadeIn} from '../../../variants'
 
-import Woodchack from '../../assets/team/team/woodchack.png'
+import Woodchack from '../../../assets/team/team/woodchack.png'
 
 const Team_Hacktive = () => {
     return (

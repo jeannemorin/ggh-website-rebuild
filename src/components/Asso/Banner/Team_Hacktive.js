@@ -2,9 +2,9 @@ import React from 'react';
 
 import {motion} from 'framer-motion'
 
-import {fadeIn} from '../../variants'
+import {fadeIn} from '../../../variants'
 
-import Hacktive from '../../assets/team/team/hacktive.png'
+import Hacktive from '../../../assets/team/team/hacktive.png'
 
 const Team_Hacktive = () => {
     return (

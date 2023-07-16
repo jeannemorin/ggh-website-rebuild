@@ -1,10 +1,8 @@
 import React from 'react';
 
-import Image from '../assets/avatar.svg';
+import Image from '../assets/rocket.png';
 
-import {FaGithub, FaYoutube, FaDribbble } from 'react-icons/fa';
-
-import {TypeAnimation} from 'react-type-animation'
+import {FaInstagram, FaDiscord, FaLinkedin } from 'react-icons/fa';
 
 import {motion} from 'framer-motion';
 
@@ -18,15 +16,22 @@ const Banner = () => {
 
         {/*text*/}
         <div className='flex-1 text-center font-secondary lg:text-left'>
+          <motion.h3
+           variants={fadeIn('up',0.3)} 
+           initial="hidden" 
+           whileInView={'show'} 
+           viewport={{once: false, amount: 0.7}}
+           className='h3 mb-4'>
+            Site en reconstruction avant le
+           </motion.h3>
           <motion.h1 
             variants={fadeIn('up',0.3)} 
             initial="hidden" 
             whileInView={'show'} 
             viewport={{once: false, amount: 0.7}} 
-            className='text-[55px] font-bold leading-[0.8] lg:text-[110px]'
-          >
+            className='text-[55px] font-bold leading-[0.8] lg:text-[110px]'>
            
-            BEN <span>AIDEN</span>
+            HACKATHON <span>EDITION #4</span>
           </motion.h1>
           <motion.div 
             variants={fadeIn('up',0.4)} 
@@ -34,21 +39,7 @@ const Banner = () => {
             whileInView={'show'} 
             viewport={{once: false, amount: 0.7}} className='bv-6 text-[36px] lg:text-[60px] font-secondary
           font semi-bold uppercase leading-[1]' >
-            <span className='text-white mr-4'>I am a</span>
-            <TypeAnimation 
-            sequence={[
-              'Developer',
-              2000,
-              'Designer',
-              2000,
-              'Youtuber',
-              2000      
-            ]} 
-            speed={50}
-            className='text-accent'
-            wrapper='span'
-            repeat={Infinity}
-            />
+            <span className='text-black mr-4'>10/11/12 NOV 2023</span>
           </motion.div>
           <motion.p 
           variants={fadeIn('up',0.5)} 
@@ -56,9 +47,6 @@ const Banner = () => {
           whileInView={'show'} 
           viewport={{once: false, amount: 0.7}} 
           className='mb-8 max-w-lg mx-auto lg:mx-0'>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-          Sed non risus. Suspendisse lectus tortor, dignissim 
-          sit amet, adipiscing nec, ultricies sed, dolor. 
           </motion.p>
           <motion.div 
             variants={fadeIn('up',0.6)} 
@@ -69,8 +57,8 @@ const Banner = () => {
             items-center mb-12 mx-auto lg:mx-0'
             >
 
-            <button className='btn btn-lg'>Contact me</button>
-            <a href='#' className='text-gradient btn-link'>My Portfolio</a>
+            <button className='btn btn-lg'>Nous contacter</button>
+            <a href='#' className='text-gradient btn-link'>Devenir Partenaire</a>
         </motion.div>
 
         {/* socials*/}
@@ -81,14 +69,14 @@ const Banner = () => {
         viewport={{once: false, amount: 0.7}} 
         className='flex text-[20px] gap-x-6 max-w-max mx-auto
         lg:mx-0'>
-          <a href='#'>
-            <FaYoutube />
+          <a href='https://discord.com/invite/3b73bBBEW8'>
+            <FaDiscord />
           </a>
-          <a href='#'>
-            <FaGithub />
+          <a href='https://www.instagram.com/gotta_go_hack/'>
+            <FaInstagram />
           </a>
-          <a href='#'>
-            <FaDribbble />
+          <a href='https://www.linkedin.com/company/gotta-go-hack/'>
+            <FaLinkedin />
           </a>
         </motion.div>
         </div>

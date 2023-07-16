@@ -6,9 +6,9 @@ import {useInView} from 'react-intersection-observer'
 
 import {motion} from 'framer-motion'
 
-import {fadeIn} from '../../variants'
+import {fadeIn} from '../../../variants'
 
-import Team from '../../assets/team.png'
+import Team from '../../../assets/team.png'
 
 import { Link } from 'react-scroll';
 
