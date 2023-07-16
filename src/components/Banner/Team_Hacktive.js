@@ -8,7 +8,7 @@ import Hacktive from '../../assets/team/team/hacktive.png'
 
 const Team_Hacktive = () => {
     return (
-        <section id='hacktive' className='section' > 
+        <section id='hacktive' className='' > 
           <div className='container mx-auto'>
             <div className='flex flex-col gap-y-10 lg:flex-row lg:items-center 
             lg:gap-x-20 lg:gap-y-0 h-screen'>
@@ -34,7 +34,7 @@ const Team_Hacktive = () => {
               className='flex-1'>
                 <h3 className='h3 mb-4'>TEAM HACKTIVE</h3>
                 <p className='mb-6'>
-                La team Hacktive est présente toute l’année pour faire fonctionner l’association et proposer des évènement toujours plus fou ! 
+                La team Hacktive est présente toute l’année pour faire fonctionner l’association et proposer des évènements toujours plus fous ! 
                 </p>
 
                 {/*button*/}

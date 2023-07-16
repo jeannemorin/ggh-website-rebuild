@@ -86,8 +86,8 @@ const About_Asso = () => {
           </div>
           {/*button*/}
           <div className='flex gap-x-8 items-center'>
-                  <button className='btn btn-lg'>Nous rejoindre</button>
-                  <a href='#' className='text-gradient btn-link'>Découvrir l'équipe</a>
+                  <a href='#contact'><button className='btn btn-lg'>Nous rejoindre</button></a>
+                  <a href='#hacktive' offset={-200} className='text-gradient btn-link'>Découvrir l'équipe</a>
           </div>
         </motion.div>
       </div>

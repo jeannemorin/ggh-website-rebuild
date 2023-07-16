@@ -33,7 +33,7 @@ const Team_Hacktive = () => {
               className='flex-1'>
                 <h3 className='h3 mb-4'>TEAM WOODCHACK</h3>
                 <p className='mb-6'>
-                La team Woodchack est l’équipe de staff de l’association. Ses membres sont présents pour venir staffer tout au long de l’année dans toute la France. 
+                La team Woodchack est l’équipe de staff de l’association. Ses membres sont présents sur nos évènements tout au long de l’année et dans toute la France. 
                 </p>
 
                 {/*button*/}
