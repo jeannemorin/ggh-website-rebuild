@@ -29,17 +29,17 @@ const Contact = () => {
           pb-24 p-6  items-start'>
           <input 
             className='bg-transparent border-b py-3 outline-none w-full
-            placeholder:text-white focus:border-accent transition-all'
+            placeholder:text-black focus:border-accent transition-all'
             type='text'
             placeholder='Your name' />
             <input 
             className='bg-transparent border-b py-3 outline-none w-full
-            placeholder:text-white focus:border-accent transition-all'
+            placeholder:text-black focus:border-accent transition-all'
             type='text'
             placeholder='Your email' />
             <textarea 
               className='bg-transparent border-b py-3 outline-none w-full
-            placeholder:text-white focus:border-accent transition-all
+            placeholder:text-black focus:border-accent transition-all
               resize-none mb-12'
               placeholder='Your message' />
               <button className='btn btn-lg'>Send message</button>

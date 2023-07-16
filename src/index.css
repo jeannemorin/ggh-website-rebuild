@@ -3,34 +3,36 @@
 @tailwind utilities;
 
 .btn {
-  background: linear-gradient(
+  /*background: linear-gradient(
     92.23deg,
-    #ff56f6 21.43%,
-    #b936ee 50.63%,
-    #3bace2 100%,
-    #406aff 117.04%
-  );
-  box-shadow: 0px 4.42184px 107.23px rgba(255, 86, 246, 0.51);
+    #ff5757 21.43%,
+    #ff5757 50.63%,
+    #FFDE59 100%,
+    #FFDE59 117.04%
+  );*/
+  background-color: #ff5757;
+  box-shadow: 0px 4.42184px 107.23px rgba(255, 87, 87, 0.51);
 }
 
 .btn:hover {
-  background: linear-gradient(
+  /*background: linear-gradient(
     92.23deg,
-    #406aff 21.43%,
-    #3bace2 50.63%,
-    #b936ee 100%,
-    #ff56f6 117.04%
-  );
+    #FFDE59 21.43%,
+    #ff5757 50.63%,
+    #ff5757 100%,
+    #ff5757 117.04%
+  );*/
+  background-color: #dc4b4b;
 }
 
 .gradient,
 .active {
   background: linear-gradient(
     92.23deg,
-    #406aff 21.43%,
-    #3bace2 50.63%,
-    #b936ee 100%,
-    #ff56f6 117.04%
+    #ff5757 21.43%,
+    #ff5757 50.63%,
+    #FFDE59 100%,
+    #FFDE59 117.04%
   );
 }
 
@@ -40,9 +42,13 @@
   border-radius: 100%;
 }
 
+.text-accent {
+  color:#00C2CB
+}
+
 @layer base {
   body {
-    @apply font-secondary text-lg leading-8 text-white;
+    @apply font-secondary text-lg leading-8 text-black;
   }
   .h2 {
     @apply font-primary text-[32px] mb-6 tracking-[10%] uppercase;
@@ -63,7 +69,7 @@
     @apply text-base;
   }
   .text-gradient {
-    @apply bg-gradient-to-r text-transparent bg-clip-text from-[#42A6E3] to-[#FF56F6] font-bold font-primary hover:from-[#FF56F6] hover:to-[#42A6E3];
+    @apply bg-gradient-to-r text-transparent bg-clip-text bg-[#FF5757] font-bold font-primary hover:bg-[#dc4b4b;];
   }
   .section {
     @apply py-8 lg:py-24 lg:h-screen flex items-center;

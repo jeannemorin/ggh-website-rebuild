@@ -27,7 +27,7 @@ const Team_Hacktive = () => {
       
               {/*text*/}
               <motion.div 
-              variants={fadeIn('right',0.5)}
+              variants={fadeIn('right',0.3)}
               initial='hidden'
               whileInView={'show'}
               viewport={{once: false, amount: 0.3}}
@@ -45,7 +45,7 @@ const Team_Hacktive = () => {
 
               {/*img*/}
               <motion.div 
-                variants={fadeIn('left',0.5)} 
+                variants={fadeIn('left',0.3)} 
                 initial="hidden" 
                 whileInView={'show'} 
                 className='hidden lg:flex flex-1 bg-contain bg-no-repeat

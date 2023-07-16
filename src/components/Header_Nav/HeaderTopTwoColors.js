@@ -21,7 +21,7 @@ const Header = () => {
                     <img className='w-[90px]' src={Logo} alt='' />
                 </a>
 
-                <nav className={`${header ? 'text-primary' : 'text-white'} flex gap-x-4 lg:gap-x-8
+                <nav className={`${header ? 'text-primary' : 'text-primary'} flex gap-x-4 lg:gap-x-8
                 tracking-[1px] items-center` }>
                         <a href='' className='hover:text-accent transition'> Home</a>
                         <a href='' className='hover:text-accent transition'> L'asso</a>

@@ -10,6 +10,8 @@ import {fadeIn} from '../../variants'
 
 import Team from '../../assets/team.png'
 
+import { Link } from 'react-scroll';
+
 
 const About_Asso = () => {
   const { ref, inView} = useInView({ });
@@ -21,9 +23,10 @@ const About_Asso = () => {
       lg:gap-x-20 lg:gap-y-0 h-screen'>
         {/*img*/}
         <motion.div 
-          variants={fadeIn('right',0.5)} 
+          variants={fadeIn('right',0.3)} 
           initial="hidden" 
           whileInView={'show'} 
+          viewport={{once: true, amount: 0.3}}
           className='hidden lg:flex flex-1 bg-contain bg-no-repeat h-[640px] 
           mix-blend-lighten bg-top'
           >
@@ -33,7 +36,7 @@ const About_Asso = () => {
 
         {/*text*/}
         <motion.div 
-        variants={fadeIn('left',0.5)}
+        variants={fadeIn('left',0.3)}
         initial='hidden'
         whileInView={'show'}
         viewport={{once: true, amount: 0.3}}
@@ -50,7 +53,7 @@ const About_Asso = () => {
               <div className='text-[40px] font-tertiary text-gradient mb-2'>
                 {
                   inView ? 
-                  <CountUp start={0} end={5} duration={3} /> :
+                  <CountUp start={0} end={5} duration={5} /> :
                   null}
               </div>
               <div className='font-primary text-sm tracking-[2px]'>
@@ -62,7 +65,7 @@ const About_Asso = () => {
               <div className='text-[40px] font-tertiary text-gradient mb-2'>
                 {
                   inView ? 
-                  <CountUp start={0} end={3} duration={3} /> :
+                  <CountUp start={0} end={3} duration={5} /> :
                   null}
               </div>
               <div className='font-primary text-sm tracking-[2px]'>
@@ -74,7 +77,7 @@ const About_Asso = () => {
               <div className='text-[40px] font-tertiary text-gradient mb-2'>
                 {
                   inView ? 
-                  <CountUp start={0} end={200} duration={3} /> :
+                  <CountUp start={0} end={200} duration={5} /> :
                   null}
                   +
               </div>
@@ -86,8 +89,8 @@ const About_Asso = () => {
           </div>
           {/*button*/}
           <div className='flex gap-x-8 items-center'>
-                  <a href='#contact'><button className='btn btn-lg'>Nous rejoindre</button></a>
-                  <a href='#hacktive' offset={-200} className='text-gradient btn-link'>Découvrir l'équipe</a>
+                  <Link to='contact' smooth={true}><button className='btn btn-lg'>Nous rejoindre</button></Link>
+                  <Link to='hacktive'  activeClass='active' smooth={true} className='cursor-pointer text-gradient btn-link'>Découvrir l'équipe</Link>
           </div>
         </motion.div>
       </div>
