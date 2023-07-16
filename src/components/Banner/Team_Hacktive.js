@@ -12,6 +12,18 @@ const Team_Hacktive = () => {
           <div className='container mx-auto'>
             <div className='flex flex-col gap-y-10 lg:flex-row lg:items-center 
             lg:gap-x-20 lg:gap-y-0 h-screen'>
+
+              {/*img sm*/}
+              <motion.div 
+                variants={fadeIn('left',0.5)} 
+                initial="hidden" 
+                whileInView={'show'} 
+                className='lg:hidden justify-center items-center flex flex-1 bg-contain bg-no-repeat
+                mix-blend-lighten bg-top'
+                >
+      
+                <img src={Hacktive} alt='' />
+              </motion.div>
       
               {/*text*/}
               <motion.div 

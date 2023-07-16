@@ -17,7 +17,7 @@ const About_Asso = () => {
   return (
   <section id='about' className='section' ref={ref}> 
     <div className='container mx-auto'>
-      <div className='flex flex-col gap-y-10 lg:flex-row lg:items-center 
+      <div className='flex flex-col lg:flex-row lg:items-center 
       lg:gap-x-20 lg:gap-y-0 h-screen'>
         {/*img*/}
         <motion.div 

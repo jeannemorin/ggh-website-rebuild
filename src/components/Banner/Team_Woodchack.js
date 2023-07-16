@@ -17,11 +17,11 @@ const Team_Hacktive = () => {
                 variants={fadeIn('right',0.5)} 
                 initial="hidden" 
                 whileInView={'show'} 
-                className='hidden lg:flex flex-1 bg-contain bg-no-repeat
-                mix-blend-lighten bg-top'
+                className='lg:flex justify-center items-center flex-1 bg-contain bg-no-repeat
+                mix-blend-lighten '
                 >
       
-                <img src={Woodchack} alt='' />
+                <img src={Woodchack} alt='woodchack' />
               </motion.div>
       
               {/*text*/}
