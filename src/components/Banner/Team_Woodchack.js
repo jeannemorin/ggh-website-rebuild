@@ -29,7 +29,7 @@ const Team_Hacktive = () => {
               variants={fadeIn('left',0.5)}
               initial='hidden'
               whileInView={'show'}
-              viewport={{once: true, amount: 0.3}}
+              viewport={{once: false, amount: 0.3}}
               className='flex-1'>
                 <h3 className='h3 mb-4'>TEAM WOODCHACK</h3>
                 <p className='mb-6'>

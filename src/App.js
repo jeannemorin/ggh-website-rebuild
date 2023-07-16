@@ -18,7 +18,6 @@ const App = () => {
       <Header />
       <Under_header />
       <Asso />
-      <div className='h-[4000px]'/>
       <FooterSimple />
     </div>
   );
