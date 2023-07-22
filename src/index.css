@@ -43,18 +43,21 @@
 }
 
 .text-accent {
-  color:#00C2CB
+  color:#FFDE59
 }
 
 @layer base {
   body {
-    @apply font-secondary text-lg leading-8 text-black;
+    @apply font-primary text-lg leading-8 text-black;
+  }
+  .h1 {
+    @apply font-primary font-bold leading-[0.8] text-[70px] uppercase mb-6;
   }
   .h2 {
-    @apply font-primary text-[32px] mb-6 tracking-[10%] uppercase;
+    @apply font-tertiary text-[32px] mb-6 tracking-[10%] uppercase text-blue;
   }
   .h3 {
-    @apply font-primary font-semibold text-[26px] mb-6 leading-[46px];
+    @apply font-secondary font-semibold text-[26px] mb-6 leading-[46px];
   }
   .btn {
     @apply rounded-full font-primary text-white font-medium;
