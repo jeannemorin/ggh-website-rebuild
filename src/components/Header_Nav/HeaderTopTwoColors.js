@@ -1,6 +1,8 @@
 import React, {useState, useEffect } from 'react';
 import Logo from '../../assets/logo.png';
 
+import { Link } from 'react-scroll';
+
 const Header = () => {
 
     const [header, setHeader] = useState(false);
@@ -28,7 +30,8 @@ const Header = () => {
                         <a href='/' className=' transition'> Les Editions</a>
                         <a href='/' className=' transition'> Sponsor</a>
 
-                        <button className='btn btn-sm'>Contact</button>
+                        <Link to='contact' activeClass='active' 
+                        smooth={true} ><button className='btn btn-sm'>Contact</button></Link>
                 </nav>
             </div>
         </header>
