@@ -58,7 +58,7 @@ const Banner = () => {
             >
 
             <button className='btn btn-lg'>Nous contacter</button>
-            <a href='/' className='text-gradient btn-link'>Devenir Partenaire</a>
+            <a href='/' className='text-gradient btn-link md:text-[20px] text-sm'>Devenir Partenaire</a>
         </motion.div>
 
         {/* socials*/}
@@ -67,7 +67,7 @@ const Banner = () => {
         initial="hidden" 
         whileInView={'show'} 
         viewport={{once: false, amount: 0.7}} 
-        className='flex text-[20px] gap-x-6 max-w-max mx-auto
+        className='flex text-[24px] gap-x-6 max-w-max mx-auto
         lg:mx-0'>
           <a href='https://discord.com/invite/3b73bBBEW8'>
             <FaDiscord />

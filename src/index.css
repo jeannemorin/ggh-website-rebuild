@@ -69,15 +69,17 @@
     @apply h-[48px] px-6 text-sm;
   }
   .btn-lg {
-    @apply h-[56px] px-10 text-base;
+    @apply h-[56px] px-10 text-[20px];
   }
   .btn-link {
     @apply text-base;
   }
   .text-gradient {
-    @apply bg-gradient-to-r text-transparent bg-clip-text bg-[#FF5757] font-bold font-primary hover:bg-[#dc4b4b];
+    @apply  text-[#FF5757] font-bold font-primary hover:text-[#dc4b4b];
   }
   .section {
     @apply py-8 lg:py-24 lg:h-screen flex items-center;
   }
 }
+
+
