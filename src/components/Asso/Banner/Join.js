@@ -27,7 +27,7 @@ const Join = () => {
           viewport={{once: false, amount: 0.3}}
           className='flex-1 border rounded-2xl flex flex-col gap-y-6
            p-6  items-start'>
-          <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeydfK36joocRSV8I9NJrnyURiK38XmI-0L5hRf96IyS6K2iw/viewform?embedded=true" width="640" height="550" frameborder="0" marginheight="0" marginwidth="0">Chargement…</iframe>
+          <iframe title="google-form" src="https://docs.google.com/forms/d/e/1FAIpQLSeydfK36joocRSV8I9NJrnyURiK38XmI-0L5hRf96IyS6K2iw/viewform?embedded=true" width="640" height="550" frameborder="0" marginheight="0" marginwidth="0">Chargement…</iframe>
           </motion.div>
       </div>
     </div>
