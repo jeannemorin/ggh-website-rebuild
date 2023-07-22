@@ -1,6 +1,5 @@
 import React, {useState, useEffect } from 'react';
 import Logo from '../../assets/logo.png';
-import { Link } from 'react-scroll';
 
 const Header = () => {
 
@@ -17,7 +16,7 @@ const Header = () => {
             
             <div className='container mx-auto flex  flex-col items-center gap-y-0
             lg:flex-row lg:justify-between'> 
-                <a href='#'>
+                <a href='/'>
                     <img className='w-[90px]' src={Logo} alt='' />
                 </a>
 
