@@ -58,7 +58,7 @@ const Banner = () => {
             >
 
             <button className='btn btn-lg'>Nous contacter</button>
-            <a href='#' className='text-gradient btn-link'>Devenir Partenaire</a>
+            <a href='/' className='text-gradient btn-link'>Devenir Partenaire</a>
         </motion.div>
 
         {/* socials*/}
