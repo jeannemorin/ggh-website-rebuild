@@ -61,12 +61,10 @@ const Banner = () => {
 
             <Link to='contact' activeClass='active' 
               smooth={true} 
-              spy={true} 
-              offset={-200}><button className='btn btn-lg'>Nous contacter</button></Link>
+              spy={true} ><button className='btn btn-lg'>Nous contacter</button></Link>
             <Link to='contact' activeClass='active' 
               smooth={true} 
-              spy={true} 
-              offset={-200} className='text-gradient btn-link'>Devenir Partenaire</Link>
+              spy={true} className='text-gradient btn-link cursor-pointer'>Devenir Partenaire</Link>
         </motion.div>
 
         {/* socials*/}
