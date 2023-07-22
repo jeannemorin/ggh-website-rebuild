@@ -23,7 +23,7 @@ const Banner = () => {
            initial="hidden" 
            whileInView={'show'} 
            viewport={{once: false, amount: 0.7}}
-           className='h4 mb-4'>
+           className='font-special font-semibold md:text-[26px] mb-6 leading-[46px] text-[18px]'>
             Site en reconstruction avant le
            </motion.h4>
           <motion.h1 
