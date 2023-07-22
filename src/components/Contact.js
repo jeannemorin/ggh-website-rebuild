@@ -7,7 +7,7 @@ import { FaLinkedin, FaDiscord, FaInstagram} from 'react-icons/fa'
 
 
 const Contact = () => {
-  return <section id='contact' className='py-16 lg:section'>
+  return <section id='contact' className='py-4 lg:section'>
     <div className='container mx-auto'>
       <div className='flex flex-col lg:flex-row'>
         <motion.div 
@@ -17,9 +17,9 @@ const Contact = () => {
           viewport={{once: false, amount: 0.3}}
           className='flex-1 flex justify-start items-center'>
           <div>
-            <h4 className='text-x1 uppercase text-accent font-medium mb-2
+            <h4 className='text-[30px] uppercase text-blue font-medium mb-2
             tracking-wide'>Nous contacter</h4>
-            <h2 className='text-[45px] lg:text-[90px] text-bold leading-none mb-12'>Gotta <br />Go Talk !</h2>
+            <h2 className='text-[45px] lg:text-[90px] font-special text-bold leading-none mb-12'>Gotta <br />Go Talk !</h2>
           </div>
         </motion.div>
         <motion.div
@@ -34,7 +34,7 @@ const Contact = () => {
             <h2 className='h3 font-medium mb-2
             tracking-wide'>Sur nos réseaux :</h2>
             <div className='flex text-[50px] gap-x-6 max-w-max mx-auto
-                lg:mx-0'>
+                lg:mx-0 text-blue'>
               <a href='https://discord.com/invite/3b73bBBEW8'>
                 <FaDiscord />
               </a>

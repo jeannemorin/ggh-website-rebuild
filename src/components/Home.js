@@ -13,7 +13,6 @@ const Home = () => {
     return ( <div>
         <Header />
         <UnderHeader />
-        <div className='h-[120px]' />
         <Banner />
         <TextSlider />
         <Contact />
