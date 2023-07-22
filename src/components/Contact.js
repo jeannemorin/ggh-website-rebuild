@@ -19,7 +19,7 @@ const Contact = () => {
           <div>
             <h4 className='text-x1 uppercase text-accent font-medium mb-2
             tracking-wide'>Nous contacter</h4>
-            <h2 className='text-[45px] lg:text-[90px] text-bold mb-12'>Gotta <br />Go Talk !</h2>
+            <h2 className='text-[45px] lg:text-[90px] text-bold leading-none mb-12'>Gotta <br />Go Talk !</h2>
           </div>
         </motion.div>
         <motion.div
@@ -27,7 +27,7 @@ const Contact = () => {
           initial='hidden'
           whileInView={'show'}
           viewport={{once: false, amount: 0.3}}
-          className='flex-1 flex justify-start items-center'>
+          className='flex-1 flex justify-center items-center'>
           <div>
             <h2 className='h3 font-medium mb-2
             tracking-wide'>info@gottagohack.fr</h2>

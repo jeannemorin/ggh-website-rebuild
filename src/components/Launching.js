@@ -57,8 +57,8 @@ const Banner = () => {
             items-center mb-12 mx-auto lg:mx-0'
             >
 
-            <button className='btn btn-lg'>Nous contacter</button>
-            <a href='/' className='text-gradient btn-link'>Devenir Partenaire</a>
+            <a href='#contact'><button className='btn btn-lg'>Nous contacter</button></a>
+            <a href='#contact' className='text-gradient btn-link'>Devenir Partenaire</a>
         </motion.div>
 
         {/* socials*/}
