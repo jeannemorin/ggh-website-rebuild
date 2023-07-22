@@ -27,8 +27,8 @@ const About_Asso = () => {
           initial="hidden" 
           whileInView={'show'} 
           viewport={{once: true, amount: 0.3}}
-          className='hidden lg:flex flex-1 bg-contain bg-no-repeat h-[640px] 
-          mix-blend-lighten bg-top'
+          className='hidden lg:flex flex-1 bg-contain bg-no-repeat h-screen
+          bg-top'
           >
 
           <img src={Team} alt='' />
@@ -41,47 +41,47 @@ const About_Asso = () => {
         whileInView={'show'}
         viewport={{once: true, amount: 0.3}}
         className='flex-1'>
-          <h2 className='h2 text-accent'>A propos</h2>
-          <h3 className='h3 mb-4'>Gotta Go Hack, l'association pour entreprendre et innover
-          à EPITA.</h3>
-          <p className='mb-6'>
+          <h1 className='h1 text-red'>à propos</h1>
+          <h2 className='h2 mb-4'>Gotta Go Hack, l'association pour entreprendre et innover
+          à EPITA.</h2>
+          <p className='mb-8'>
           Depuis février 2021, Gotta Go Hack promeut l'innovation et l'entrepreneuriat auprès des étudiants ingénieurs, notamment à travers des Hackathons. 
           </p>
           {/*stats*/ }
           <div className='flex gap-x-6 lg:gap-x-10 mb-12'>
             <div>
-              <div className='text-[40px] font-tertiary text-gradient mb-2'>
+              <div className='h1 text-red leading-none mb-2'>
                 {
                   inView ? 
-                  <CountUp start={0} end={5} duration={5} /> :
+                  <CountUp  start={0} end={5} duration={5} /> :
                   null}
               </div>
-              <div className='font-primary text-sm tracking-[2px]'>
+              <div className='font-primary text-[16px] tracking-[2px]'>
                 Hackathons <br />
                 en 2 ans
               </div>
             </div>
             <div>
-              <div className='text-[40px] font-tertiary text-gradient mb-2'>
+              <div className='h1 text-red leading-none mb-2'>
                 {
                   inView ? 
                   <CountUp start={0} end={3} duration={5} /> :
                   null}
               </div>
-              <div className='font-primary text-sm tracking-[2px]'>
+              <div className='font-primary text-[16px] tracking-[2px]'>
                 Campus <br />
                 Différents
               </div>
             </div>
             <div>
-              <div className='text-[40px] font-tertiary text-gradient mb-2'>
+              <div className='h1 text-red leading-none mb-2'>
                 {
                   inView ? 
-                  <CountUp start={0} end={200} duration={5} /> :
+                  <CountUp  start={0} end={200} duration={5} /> :
                   null}
                   +
               </div>
-              <div className='font-primary text-sm tracking-[2px]'>
+              <div className='font-primary text-[16px] tracking-[2px]'>
                 Participants <br />
                 Comblés
               </div>

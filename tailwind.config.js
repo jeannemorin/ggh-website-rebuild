@@ -5,6 +5,7 @@ module.exports = {
       primary: 'Rajdhani',
       secondary: 'Inter',
       tertiary: 'Aldrich',
+      special : 'Orbitron'
     },
     container: {
       padding: {
@@ -23,12 +24,12 @@ module.exports = {
         red: '#FF5757',
         yellow: '#FFDE59',
         grey: '#2A2E30',
-        primary: '#fefefe',
+        primary: '#000000',
         accent: '#ff5757',
       },
       backgroundImage: {
         about: "url('./assets/about.png')",
-        team: "url('./assets/team.png')",
+        team: "url('./assets/mehdi.png')",
         services: "url('./assets/services.png')",
       },
     },

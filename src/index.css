@@ -48,16 +48,19 @@
 
 @layer base {
   body {
-    @apply font-primary text-lg leading-8 text-black;
+    @apply font-primary text-lg leading-5 text-black;
   }
   .h1 {
     @apply font-primary font-bold leading-[0.8] text-[70px] uppercase mb-6;
   }
   .h2 {
-    @apply font-tertiary text-[32px] mb-6 tracking-[10%] uppercase text-blue;
+    @apply font-tertiary text-[32px] mb-6 tracking-[10%] uppercase leading-9;
   }
   .h3 {
     @apply font-secondary font-semibold text-[26px] mb-6 leading-[46px];
+  }
+  .h4 {
+    @apply font-special font-semibold text-[26px] mb-6 leading-[46px];
   }
   .btn {
     @apply rounded-full font-primary text-white font-medium;

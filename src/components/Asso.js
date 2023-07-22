@@ -10,7 +10,7 @@ import TeamWoodchackBanner from './Asso/Banner/Team_Woodchack';
 import TeamRoundMembersBanner from './Asso/Banner/Team_Round';
 
 import Photo from '../assets/team/avatar.svg';
-import Contact from './Contact';
+import Join from './Asso/Banner/Join';
 
 const members = [
     {
@@ -65,7 +65,7 @@ const Asso = () => {
         <TeamRoundMembersBanner members={members}/>
         <TeamWoodchackBanner />
         <TeamRoundMembersBanner members={members}/>
-        <Contact />
+        <Join />
         <FooterSimple />
     </div>)
 };
