@@ -18,14 +18,14 @@ const Banner = () => {
 
         {/*text*/}
         <div className='flex-1 text-center font-secondary lg:text-left'>
-          <motion.h3
+          <motion.h4
            variants={fadeIn('up',0.3)} 
            initial="hidden" 
            whileInView={'show'} 
            viewport={{once: false, amount: 0.7}}
-           className='h3 mb-4'>
+           className='h4 mb-4'>
             Site en reconstruction avant le
-           </motion.h3>
+           </motion.h4>
           <motion.h1 
             variants={fadeIn('up',0.3)} 
             initial="hidden" 
@@ -73,7 +73,7 @@ const Banner = () => {
         initial="hidden" 
         whileInView={'show'} 
         viewport={{once: false, amount: 0.7}} 
-        className='flex text-[20px] gap-x-6 max-w-max mx-auto
+        className='flex text-[24px] gap-x-6 max-w-max mx-auto
         lg:mx-0'>
           <a href='https://discord.com/invite/3b73bBBEW8'>
             <FaDiscord />
