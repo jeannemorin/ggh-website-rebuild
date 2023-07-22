@@ -1,5 +1,7 @@
 import React from 'react';
 
+import { Link } from 'react-scroll';
+
 import Image from '../assets/rocket.png';
 
 import {FaInstagram, FaDiscord, FaLinkedin } from 'react-icons/fa';
@@ -57,8 +59,14 @@ const Banner = () => {
             items-center mb-12 mx-auto lg:mx-0'
             >
 
-            <a href='#contact'><button className='btn btn-lg'>Nous contacter</button></a>
-            <a href='#contact' className='text-gradient btn-link'>Devenir Partenaire</a>
+            <Link to='contact' activeClass='active' 
+              smooth={true} 
+              spy={true} 
+              offset={-200}><button className='btn btn-lg'>Nous contacter</button></Link>
+            <Link to='contact' activeClass='active' 
+              smooth={true} 
+              spy={true} 
+              offset={-200} className='text-gradient btn-link'>Devenir Partenaire</Link>
         </motion.div>
 
         {/* socials*/}
