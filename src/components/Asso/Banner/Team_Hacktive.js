@@ -4,6 +4,8 @@ import {motion } from 'framer-motion'
 
 import {fadeIn} from '../../../variants'
 
+import { Link } from 'react-scroll';
+
 import Hacktive from '../../../assets/team/team/hacktive.png'
 
 const Team_Hacktive = () => {
@@ -39,7 +41,7 @@ const Team_Hacktive = () => {
 
                 {/*button*/}
                 <div className='flex gap-x-8 items-center'>
-                        <button className='btn btn-lg'>Nous rejoindre</button>
+                  <Link to='contact' smooth={true}><button className='btn btn-lg'>Nous rejoindre</button></Link>
                 </div>
               </motion.div>
 

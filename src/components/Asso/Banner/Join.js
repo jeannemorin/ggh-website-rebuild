@@ -15,8 +15,8 @@ const Join = () => {
           viewport={{once: false, amount: 0.3}}
           className='flex-1 flex justify-start items-center'>
           <div>
-            <h4 className='text-x1 uppercase text-red font-medium mb-2
-            tracking-wide'>Contacte nous</h4>
+            <h4 className='text-[30px] uppercase text-red font-medium mb-2
+            tracking-wide'>Contacte nous &</h4>
             <h2 className='text-[45px] lg:text-[90px] leading-none mb-12'>Rejoins <br />l'aventure!</h2>
           </div>
         </motion.div>
