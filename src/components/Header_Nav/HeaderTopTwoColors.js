@@ -1,6 +1,8 @@
 import React, {useState, useEffect } from 'react';
 import Logo from '../../assets/logo.png';
 
+import { Link } from 'react-scroll';
+
 const Header = () => {
 
     const [header, setHeader] = useState(false);
@@ -21,14 +23,15 @@ const Header = () => {
                 </a>
 
                 <nav className={`${header ? 'text-primary' : 'text-primary'} flex gap-x-4 lg:gap-x-8
-                tracking-[1px] items-center text-[20px] uppercase` }>
-                        <a href='/' className='hover:text-accent transition cursor-pointer'> Home</a>
-                        <a href='/about' className='hover:text-accent transition cursor-pointer'>Asso</a>
-                        <a href='/blog' className='hover:text-accent transition'> Actualités'</a>
-                        <a href='/archives' className='hover:text-accent transition'> Les Editions</a>
-                        <a href='/sponsor' className='hover:text-accent transition'> Sponsor</a>
+                tracking-[1px] items-center text-[20px]` }>
+                        <a href='/' className=' transition '> Home</a>
+                        <a href='/' className=' transition '>Asso</a>
+                        <a href='/' className=' transition'> Actualités'</a>
+                        <a href='/' className=' transition'> Les Editions</a>
+                        <a href='/' className=' transition'> Sponsor</a>
 
-                        <button className='btn btn-lg'>Contact</button>
+                        <Link to='contact' activeClass='active' 
+                        smooth={true} ><button className='btn btn-lg'>Contact</button></Link>
                 </nav>
             </div>
         </header>

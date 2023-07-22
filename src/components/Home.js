@@ -6,13 +6,17 @@ import UnderHeader from './Under_header';
 import Banner from './Launching';
 import TextSlider from './TextSlider';
 
+import Contact from './Contact';
+
 
 const Home = () => {
     return ( <div>
         <Header />
         <UnderHeader />
+        <div className='h-[120px]' />
         <Banner />
         <TextSlider />
+        <Contact />
         <FooterSimple />
     </div>)
 }
