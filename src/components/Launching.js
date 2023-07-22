@@ -23,7 +23,7 @@ const Banner = () => {
            initial="hidden" 
            whileInView={'show'} 
            viewport={{once: false, amount: 0.7}}
-           className='h4 mb-4'>
+           className='font-special font-semibold md:text-[26px] mb-6 leading-[46px] text-[18px]'>
             Site en reconstruction avant le
            </motion.h4>
           <motion.h1 
@@ -64,7 +64,7 @@ const Banner = () => {
               spy={true} ><button className='btn btn-lg'>Nous contacter</button></Link>
             <Link to='contact' activeClass='active' 
               smooth={true} 
-              spy={true} className='text-gradient btn-link cursor-pointer'>Devenir Partenaire</Link>
+              spy={true} className='text-gradient btn-link cursor-pointer text-[20px]'>Devenir Partenaire</Link>
         </motion.div>
 
         {/* socials*/}
@@ -75,13 +75,13 @@ const Banner = () => {
         viewport={{once: false, amount: 0.7}} 
         className='flex text-[24px] gap-x-6 max-w-max mx-auto
         lg:mx-0'>
-          <a href='https://discord.com/invite/3b73bBBEW8'>
+          <a className="social" href='https://discord.com/invite/3b73bBBEW8'>
             <FaDiscord />
           </a>
-          <a href='https://www.instagram.com/gotta_go_hack/'>
+          <a className="social" href='https://www.instagram.com/gotta_go_hack/'>
             <FaInstagram />
           </a>
-          <a href='https://www.linkedin.com/company/gotta-go-hack/'>
+          <a className="social" href='https://www.linkedin.com/company/gotta-go-hack/'>
             <FaLinkedin />
           </a>
         </motion.div>
