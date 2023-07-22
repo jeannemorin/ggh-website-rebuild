@@ -46,7 +46,6 @@ const Contact = () => {
               </a>
             </div>
           </div>
-          
         </motion.div>
       </div>
     </div>
