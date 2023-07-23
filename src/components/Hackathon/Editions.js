@@ -25,19 +25,19 @@ const Editions = () => {
 
             {/*Max 6 ligns of text to align the cards*/}
             <p className='max-w-sm mb-10'> Depuis 2021, le Hackathon Gotta Go Hack rythme le campus EPITA EPITECH parisien avec 2 éditions par an. Pour chaque édition, nous travaillons avec différents partenaires et proposons des thèmes uniques. Découvrez notre folle aventure depuis ses débuts et retrouvez tous les projets présentés.</p>
-            <button className='btn btn-lg'>Toutes les éditions</button>
+            <button className='btn btn-lg mb-1'>Toutes les éditions</button>
           </div>
           {/*image*/}
           <div className='group relative overflow-hidden border-2 
           border-white/50 rounded-xl '>
             <div className='group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300'>      
             </div>
-            <img className='group-hover:scale-125 transition-all duration-500' src={img2} alt='' />
+            <img className='group-hover:scale-125 transition-all duration-500' src={img3} alt='' />
             <div className='absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50'>
-              <span className='text-gradient'>EDITION #2</span>
+              <span className='h1 text-red'>EDITION #3</span>
               </div>
             <div className='absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-500 z-50'>
-              <span className='text-3x1 text-white'>13-15 mai 2022</span>
+              <span className='text-4x1 text-white'>18-20 nov 2022</span>
             </div>
           </div>
         </motion.div>
@@ -52,12 +52,12 @@ const Editions = () => {
           border-white/50 rounded-xl '>
             <div className='group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300'>      
             </div>
-            <img className='group-hover:scale-125 transition-all duration-500' src={img3} alt='' />
+            <img className='group-hover:scale-125 transition-all duration-500' src={img2} alt='' />
             <div className='absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50'>
-              <span className='text-gradient'>EDITION #3</span>
+              <span className='h1 text-red'>EDITION #2</span>
               </div>
             <div className='absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-500 z-50'>
-              <span className='text-3x1 text-white'>18-20 nov 2022</span>
+              <span className='text-4x1 text-white'>13-15 mai 2022</span>
             </div>
           </div>
         {/*image*/}
@@ -67,10 +67,10 @@ const Editions = () => {
               </div>
               <img className='group-hover:scale-125 transition-all duration-500' src={img1} alt='' />
               <div className='absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50'>
-                <span className='text-gradient'>EDITION #1 </span>
+                <span className='h1 text-red'>EDITION #1 </span>
                 </div>
               <div className='absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-500 z-50'>
-                <span className='text-3x1 text-white'>26-28 nov 2021</span>
+                <span className='text-4x1 text-white'>26-28 nov 2021</span>
               </div>
           </div>
         </motion.div>
