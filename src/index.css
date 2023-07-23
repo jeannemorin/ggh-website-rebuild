@@ -43,7 +43,8 @@
 }
 
 .text-accent {
-  color:#FFDE59
+  color:#ff5757;
+  font-weight: 600;
 }
 
 @layer base {

@@ -7,6 +7,7 @@ import Banner from './Launching';
 import TextSlider from './TextSlider';
 
 import Contact from './Contact';
+import Editions from './Hackathon/Editions';
 
 
 const Home = () => {
@@ -15,7 +16,7 @@ const Home = () => {
         <UnderHeader />
         <Banner />
         <TextSlider />
-        <Contact />
+        <Editions />
         <FooterSimple />
     </div>)
 }
