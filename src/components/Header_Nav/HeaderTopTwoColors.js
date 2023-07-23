@@ -19,7 +19,7 @@ const Header = () => {
             <div className='container mx-auto flex items-center gap-y-0
             flex-row justify-between'> 
                 <a href='/'>
-                    <img className='w-[80px] social' src={Logo} alt='' />
+                    <img className='w-[80px] shakingImg' src={Logo} alt='' />
                 </a>
 
                 <nav className={`${header ? 'text-primary' : 'text-primary'} flex gap-x-4 lg:gap-x-8

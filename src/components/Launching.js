@@ -75,13 +75,13 @@ const Banner = () => {
         viewport={{once: false, amount: 0.7}} 
         className='flex text-[24px] gap-x-6 max-w-max mx-auto
         lg:mx-0'>
-          <a className="social" href='https://discord.com/invite/3b73bBBEW8'>
+          <a className="shakingImg discord" href='https://discord.com/invite/3b73bBBEW8'>
             <FaDiscord />
           </a>
-          <a className="social" href='https://www.instagram.com/gotta_go_hack/'>
+          <a className="shakingImg insta" href='https://www.instagram.com/gotta_go_hack/'>
             <FaInstagram />
           </a>
-          <a className="social" href='https://www.linkedin.com/company/gotta-go-hack/'>
+          <a className="shakingImg linkedin" href='https://www.linkedin.com/company/gotta-go-hack/'>
             <FaLinkedin />
           </a>
         </motion.div>

@@ -19,7 +19,7 @@ const Contact = () => {
           initial='hidden'
           whileInView={'show'}
           viewport={{once: false, amount: 0.3}}
-          className='items-center flex flex-1 max-w-[320px] lg:max-w-[482px]'>
+          className='items-center flex flex-1 max-w-[320px] lg:max-w-[482px] py-6 '>
           <img src={Connection} alt='' className='items-center'/>
           
         </motion.div>
@@ -50,13 +50,13 @@ const Contact = () => {
             tracking-wide'>Sur nos réseaux :</h2>
             <div className='flex text-[50px] gap-x-6 max-w-max mx-auto
                 lg:mx-0  ml-4'>
-              <a className="social" href='https://discord.com/invite/3b73bBBEW8'>
+              <a className="discord shakingImg" href='https://discord.com/invite/3b73bBBEW8'>
                 <FaDiscord />
               </a>
-              <a className="social" href='https://www.instagram.com/gotta_go_hack/'>
+              <a className="insta shakingImg" href='https://www.instagram.com/gotta_go_hack/'>
                 <FaInstagram />
               </a>
-              <a className="social" href='https://www.linkedin.com/company/gotta-go-hack/'>
+              <a className="linkedin shakingImg" href='https://www.linkedin.com/company/gotta-go-hack/'>
                 <FaLinkedin />
               </a>
             </div>
