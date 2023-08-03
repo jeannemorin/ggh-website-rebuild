@@ -12,7 +12,7 @@ const Team_Hacktive = () => {
     return (
         <section id='hacktive' className='' > 
           <div className='container mx-auto'>
-            <div className='flex flex-col gap-y-10 lg:flex-row lg:items-center 
+            <div className='flex flex-col lg:flex-row lg:items-center 
             lg:gap-x-20 lg:gap-y-0 h-screen'>
 
               {/*img sm*/}
@@ -20,7 +20,7 @@ const Team_Hacktive = () => {
                 variants={fadeIn('left',0.5)} 
                 initial="hidden" 
                 whileInView={'show'} 
-                className='lg:hidden justify-center items-center flex flex-1 bg-contain bg-no-repeat
+                className='lg:hidden justify-start items-start flex bg-contain bg-no-repeat
                 mix-blend-lighten bg-top'
                 >
       
@@ -33,9 +33,9 @@ const Team_Hacktive = () => {
               initial='hidden'
               whileInView={'show'}
               viewport={{once: false, amount: 0.3}}
-              className='flex-1'>
+              className='flex flex-col flex-1 lg:items-start items-center'>
                 <h3 className='h3 mb-4'>TEAM HACKTIVE</h3>
-                <p className='mb-6'>
+                <p className='mb-6 text-center lg:text-start'>
                 La team Hacktive est présente toute l’année pour faire fonctionner l’association et proposer des évènements toujours plus fous ! 
                 </p>
 

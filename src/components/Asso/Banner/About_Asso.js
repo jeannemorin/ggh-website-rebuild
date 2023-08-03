@@ -8,7 +8,7 @@ import {motion } from 'framer-motion'
 
 import {fadeIn} from '../../../variants'
 
-import Team from '../../../assets/mehdi.png'
+import Team from '../../../assets/sarah.png'
 
 import { Link } from 'react-scroll';
 
@@ -19,8 +19,8 @@ const About_Asso = () => {
   return (
   <section id='about' className='section' ref={ref}> 
     <div className='container mx-auto'>
-      <div className='flex flex-col lg:flex-row lg:items-center 
-      lg:gap-x-20 lg:gap-y-0 h-screen'>
+      <div className='flex flex-col lg:flex-row items-center
+      lg:gap-x-10 lg:gap-y-0 h-screen'>
         {/*img*/}
         <motion.div 
           variants={fadeIn('right',0.3)} 
