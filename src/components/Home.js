@@ -6,11 +6,11 @@ import UnderHeader from './Under_header';
 import Banner from './Launching';
 import TextSlider from './TextSlider';
 
-import Contact from './Contact';
 import Editions from './Hackathon/Editions';
 import ThreeCol from './Hackathon/ThreeCol';
 import Impact from './Hackathon/Impact';
 import About from './Hackathon/About';
+import Partners from './Hackathon/Partner';
 
 
 const Home = () => {
@@ -20,6 +20,7 @@ const Home = () => {
         <Banner />
         <TextSlider />
         <About />
+        <Partners />
         <Editions />
         <ThreeCol />
         <Impact />
