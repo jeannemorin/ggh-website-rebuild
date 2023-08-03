@@ -10,6 +10,7 @@ import Contact from './Contact';
 import Editions from './Hackathon/Editions';
 import ThreeCol from './Hackathon/ThreeCol';
 import Impact from './Hackathon/Impact';
+import About from './Hackathon/About';
 
 
 const Home = () => {
@@ -18,6 +19,7 @@ const Home = () => {
         <UnderHeader />
         <Banner />
         <TextSlider />
+        <About />
         <Editions />
         <ThreeCol />
         <Impact />
