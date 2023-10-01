@@ -14,7 +14,7 @@ import Projects from '../Projects'
 
 import { BsArrowRight } from "react-icons/bs"
 
-import Logo from "../../../assets/editions/1.png";
+import Logo from "../../../assets/editions/2.png";
 
 import cidoos from '../../../assets/teams/2/cidoos.png';
 import crowsnews from '../../../assets/teams/2/crowsnews.png';
