@@ -11,6 +11,7 @@ import ThreeCol from './Hackathon/ThreeCol';
 import Impact from './Hackathon/Impact';
 import About from './Hackathon/About';
 import Partners from './Hackathon/Partner';
+import Insights from './Hackathon/Insights';
 
 
 const Home = () => {
@@ -20,7 +21,7 @@ const Home = () => {
         <Banner />
         <TextSlider />
         <About />
-        <Partners />
+        <Insights />
         <Editions />
         <ThreeCol />
         <Impact />

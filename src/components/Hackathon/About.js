@@ -36,10 +36,10 @@ const About = () => {
                 <h3 className='h1 text-accent lg:mb-4'>C'EST QUOI UN HACKATHON ?</h3>
                 <div>
                   <p className='mb-3'>
-                  Pendant <span className='font-semibold'>2 jours et 2 nuits</span>, des équipes de 2-4 étudiants travaillent pour <span className='font-semibold'> prototyper et presenter un projet innovant </span> autour d’une problématique. <br />
+                  Pendant <span className='font-semibold'>2 jours et 2 nuits</span>, des équipes de 2-4 étudiants travaillent pour <span className='font-semibold'> prototyper et présenter un projet innovant </span> autour d’une problématique. <br />
                   </p>
-                  <p className='lg:mb-3 mb-8'>Accompagnées par des coachs et des workshops, ces équipes prototypent une solution concrète ainsi que son business plan. Le hackathon se termine 
-                  sur une session de pitch et de demo devant un jury de professionnels et les équipes gagnantes sont récompensées.
+                  <p className='lg:mb-3 mb-8'>Accompagnées par des coachs et des workshops, ces équipes créent un produit concret ainsi que son business plan, comme une vraie startup ! Le hackathon se termine 
+                  sur une session de pitch et de demo devant un jury de professionnels.
                   </p>
                 </div>
 
