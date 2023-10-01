@@ -23,6 +23,7 @@ const Home = () => {
         <About />
         <Insights />
         <Editions />
+        <Partners />
         <ThreeCol />
         <Impact />
         <FooterSimple />

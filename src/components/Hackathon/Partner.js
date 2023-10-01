@@ -7,7 +7,8 @@ import massa from "../../assets/partner/massa.png"
 import qonto from "../../assets/partner/qonto.png"
 import slb from "../../assets/partner/slb.png"
 import datadog from "../../assets/partner/datadog.png"
-import sopra from "../../assets/partner/sopra.png"
+
+import { Link } from 'react-scroll';
 
 const Partners = () => {
     return (
@@ -20,8 +21,10 @@ const Partners = () => {
                 <img src={qonto} alt='' className='w-80 mr-20 align-middle'/>
                 <img src={slb} alt='' className=' mr-20 align-middle'/>
                 <img src={datadog} alt='' className='w-80 mr-20 align-middle'/>
-                <img src={sopra} alt='' className='w-80 mr-20 align-middle'/>
             </Marquee>
+            <div className='flex flex-1 items-center justify-center mt-10'> 
+                <Link to='contact' smooth={true}><button className='btn btn-lg'>Devenir partenaire</button></Link>
+            </div>
         </div>
     )
 }
