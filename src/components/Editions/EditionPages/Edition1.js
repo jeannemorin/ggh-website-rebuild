@@ -2,6 +2,8 @@ import React from 'react'
 
 import Marquee from "react-fast-marquee";
 import { Link } from 'react-scroll';
+import {motion } from 'framer-motion'
+import {fadeIn} from '../../../variants'
 
 import Banner from "../Banner"
 
@@ -193,11 +195,62 @@ const Edition1 = () =>  {
             <Header />
                 <div className='container mx-auto'>
                     <Banner edition={edition.number} dates={edition.dates} image={Logo}/>
-                    <Summary summary={edition.summary} image={edition.image} />
+                    
+                    <section id='summary' className='' > 
+                        <div className='container mx-auto'>
+                            <div className='flex flex-col lg:flex-row lg:items-center 
+                            lg:gap-x-20 lg:gap-y-0 h-screen'>
+
+                            {/*img sm*/}
+                            <motion.div 
+                                variants={fadeIn('left',0.5)} 
+                                initial="hidden" 
+                                whileInView={'show'} 
+                                className='lg:hidden justify-center items-center flex bg-contain bg-no-repeat
+                                mix-blend-lighten bg-top'
+                                >
+                    
+                                <img src={edition.image} alt='' />
+                            </motion.div>
+                    
+                            {/*text*/}
+                            <motion.div 
+                            variants={fadeIn('right',0.3)}
+                            initial='hidden'
+                            whileInView={'show'}
+                            viewport={{once: false, amount: 0.3}}
+                            className='flex flex-col flex-1 lg:items-start items-center lg:gap-y-6 lg:mt-0 mt-6'>
+                                <h1 className='h1 lg:mb-4 text-accent'>EN BREF</h1>
+                                <p className='mb-6 text-center lg:text-start'>
+                                    Le Hackathon winter edition #1 est notre <span className='font-semibold'>première édition présentielle</span> ! Elle a réuni une cinquantaine de participant sur le campus 
+                                    d'EPITA Kremlin-Bicêtre et une vingtaine à distance pour une nouvelle compétition autour du thème <span className='font-semibold'>'Planète et Alimentation'</span>.
+                                </p>
+                                <p className='mb-6 text-center lg:text-start'> 
+                                    Au programme, workshops, réveil aérobic et pizza mais aussi une toute nouvelle opportunité : le Parcours Tuto. 
+                                    6 participants ont eu la chance de suivre ce programme hors compétition autour de l'E-accessibilité. 
+                                </p>
+                                <p className='mb-6 text-center lg:text-start font-semibold'>Cette édition a été possible grâce au soutien de la Société Général, sponsor de l'évènement.</p>
+
+                            </motion.div>
+
+                            {/*img*/}
+                            <motion.div 
+                                variants={fadeIn('left',0.3)} 
+                                initial="hidden" 
+                                whileInView={'show'} 
+                                className='hidden lg:flex  flex-1 bg-contain bg-no-repeat
+                                mix-blend-lighten bg-top'
+                                >
+                                <img src={edition.image} alt='' />
+                            </motion.div>
+                            </div>
+                        </div>
+                    </section>
+
                     <Projects projects={projects} themes={themes} />
                 
-                    <section id="gallery" className='mb-20'>
-                        <h1 className='h1 mt-24'>Galerie</h1>
+                    <section id="gallery" className='mt-40 mb-36'>
+                        <h1 className='h1 '>Galerie</h1>
                                                   
                         <Marquee className='mt-10 mb-4'>
                             <img src={require("../../../assets/editions/1/1.jpg")} alt="" />
