@@ -2,14 +2,16 @@ import React from 'react';
 
 import {motion } from 'framer-motion'
 
-import { fadeIn } from '../variants';
+import { fadeIn } from '../../variants';
 
-import img1 from '../assets/portfolio-img1.png';
-import img2 from '../assets/portfolio-img2.png';
-import img3 from '../assets/portfolio-img3.png';
+import { Link } from "react-scroll";
 
-const Work = () => {
-  return <section id='work' className='section'>
+import img1 from '../../assets/editions/1.png';
+import img2 from '../../assets/editions/2.png';
+import img3 from '../../assets/editions/3.png';
+
+const Editions = () => {
+  return <section id='editions' className='section'>
     <div className='container mx-auto'>
       <div className='flex flex-col lg:flex-row gap-x-10'>
         <motion.div 
@@ -20,23 +22,24 @@ const Work = () => {
           className='flex-1 flex flex-col gap-y-12 mb-10 lg:mb-0'>
           {/*text*/}
           <div>
-            <h2 className='h2 leading-tight text-accent'>My Latest <br />
-            Work.</h2>
+            <h2 className='h2 leading-tight text-accent'>Les dernières <br />
+            éditions.</h2>
 
-            <p className='max-w-sm mb-10'> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.</p>
-            <button className='btn btn-sm'>View all projects</button>
+            {/*Max 6 ligns of text to align the cards*/}
+            <p className='max-w-sm mb-10'> Depuis 2021, le Hackathon Gotta Go Hack rythme le campus EPITA EPITECH parisien avec 2 éditions par an. Pour chaque édition, nous travaillons avec différents partenaires et proposons des thèmes uniques. Découvrez notre folle aventure depuis ses débuts et retrouvez tous les projets présentés.</p>
+            <Link to='contact' smooth={true}><button className='btn btn-lg mb-1'>Toutes les éditions</button></Link>
           </div>
           {/*image*/}
           <div className='group relative overflow-hidden border-2 
           border-white/50 rounded-xl '>
             <div className='group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300'>      
             </div>
-            <img className='group-hover:scale-125 transition-all duration-500' src={img1} alt='' />
+            <img className='group-hover:scale-125 transition-all duration-500' src={img3} alt='' />
             <div className='absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50'>
-              <span className='text-gradient'>UI/UX Design</span>
+              <span className='h1 text-red'>EDITION #3</span>
               </div>
             <div className='absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-500 z-50'>
-              <span className='text-3x1 text-white'>Project Title</span>
+              <span className='text-4x1 text-white'>18-20 nov 2022</span>
             </div>
           </div>
         </motion.div>
@@ -53,10 +56,10 @@ const Work = () => {
             </div>
             <img className='group-hover:scale-125 transition-all duration-500' src={img2} alt='' />
             <div className='absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50'>
-              <span className='text-gradient'>UI/UX Design</span>
+              <span className='h1 text-red'>EDITION #2</span>
               </div>
             <div className='absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-500 z-50'>
-              <span className='text-3x1 text-white'>Project Title</span>
+              <span className='text-4x1 text-white'>13-15 mai 2022</span>
             </div>
           </div>
         {/*image*/}
@@ -64,12 +67,12 @@ const Work = () => {
             border-white/50 rounded-xl '>
               <div className='group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300'>      
               </div>
-              <img className='group-hover:scale-125 transition-all duration-500' src={img3} alt='' />
+              <img className='group-hover:scale-125 transition-all duration-500' src={img1} alt='' />
               <div className='absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50'>
-                <span className='text-gradient'>UI/UX Design</span>
+                <span className='h1 text-red'>EDITION #1 </span>
                 </div>
               <div className='absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-500 z-50'>
-                <span className='text-3x1 text-white'>Project Title</span>
+                <span className='text-4x1 text-white'>26-28 nov 2021</span>
               </div>
           </div>
         </motion.div>
@@ -78,4 +81,4 @@ const Work = () => {
   </section>;
 };
 
-export default Work;
+export default Editions;

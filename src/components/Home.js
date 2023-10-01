@@ -5,6 +5,8 @@ import FooterSimple from './Footer/FooterSimple';
 import UnderHeader from './Under_header';
 import Banner from './Launching';
 import TextSlider from './TextSlider';
+import About from './Hackathon/About';
+import Edition from './Hackathon/Editions';
 
 import Contact from './Contact';
 
@@ -15,6 +17,8 @@ const Home = () => {
         <UnderHeader />
         <Banner />
         <TextSlider />
+        <About />
+        <Edition />
         <Contact />
         <FooterSimple />
     </div>)
