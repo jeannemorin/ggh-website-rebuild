@@ -9,8 +9,6 @@ import PropTypes from 'prop-types';
 
 const Summary = ({summary, image }) => {
 
-    const src = require(`../../assets/editions/${image}.png`);
-
     return (
         <section id='summary' className='' > 
           <div className='container mx-auto'>
@@ -26,7 +24,7 @@ const Summary = ({summary, image }) => {
                 mix-blend-lighten bg-top'
                 >
       
-                <img src={src} alt='' />
+                <img src={image} alt='' />
               </motion.div>
       
               {/*text*/}
@@ -49,7 +47,7 @@ const Summary = ({summary, image }) => {
                 className='hidden lg:flex  flex-1 bg-contain bg-no-repeat
                 mix-blend-lighten bg-top'
                 >
-                <img src={src} alt='' />
+                <img src={image} alt='' />
               </motion.div>
             </div>
           </div>
@@ -58,7 +56,7 @@ const Summary = ({summary, image }) => {
 
 Summary.propTypes = {
     summary: PropTypes.string.isRequired,
-    image: PropTypes.string.isRequired
+    image: PropTypes.object.isRequired
 }
 
 export default Summary;

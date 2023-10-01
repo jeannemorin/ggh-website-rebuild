@@ -1,24 +1,24 @@
 import React from 'react'
 
-import Banner from "./Banner"
+import Banner from "../Banner"
 
-import Header from '../Header_Nav/HeaderTopTwoColors'
-import FooterSimple from '../Footer/FooterSimple'
-import Summary from './Summary'
-import Projects from './Projects'
+import Header from '../../Header_Nav/HeaderTopTwoColors'
+import FooterSimple from '../../Footer/FooterSimple'
+import Summary from '../Summary'
+import Projects from '../Projects'
 
 //import Cup from '../../assets/cup.svg'
-import PtitsSups from '../../assets/teams/0/ptits_sups.webp'
-import Alcoolib from '../../assets/teams/0/alcoolib.webp'
-import Harmoniks from '../../assets/teams/0/harmoniks.webp'
-import EzTax from '../../assets/teams/0/ez_tax.webp'
-import Zelanders from '../../assets/teams/0/zelanders.webp'
-import TroyTeam from '../../assets/teams/0/troy_team.webp'
-import ReunitedHackers from '../../assets/teams/0/reunited_hackers.webp'
-import DDD from '../../assets/teams/0/ddd.webp'
+import PtitsSups from '../../../assets/teams/0/ptits_sups.webp'
+import Alcoolib from '../../../assets/teams/0/alcoolib.webp'
+import Harmoniks from '../../../assets/teams/0/harmoniks.webp'
+import EzTax from '../../../assets/teams/0/ez_tax.webp'
+import Zelanders from '../../../assets/teams/0/zelanders.webp'
+import TroyTeam from '../../../assets/teams/0/troy_team.webp'
+import ReunitedHackers from '../../../assets/teams/0/reunited_hackers.webp'
+import DDD from '../../../assets/teams/0/ddd.webp'
 
-import Logo from '../../assets/editions/0.png'
-import Image from "../../assets/editions/0.png"
+import Logo from '../../../assets/editions/0.png'
+import Image from "../../../assets/editions/0.png"
 
 const projects = [
     [ {
@@ -118,7 +118,6 @@ const Edition0 = () =>  {
         <div>
             <Header />
             <Banner edition={edition.number} dates={edition.dates} image={Logo}/>
-            <Summary summary={edition.summary} image={edition.number} />
             <Projects projects={projects} themes={themes} />
             <FooterSimple />
         </div>

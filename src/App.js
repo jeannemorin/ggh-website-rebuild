@@ -4,8 +4,8 @@ import { Routes, Route } from 'react-router-dom';
 // components
 import Asso from './components/Asso';
 import Home from './components/Home';
-import Edition0 from './components/Editions/Edition0';
-import Edition1 from './components/Editions/Edition_1/Edition1';
+import Edition0 from './components/Editions/EditionPages/Edition0';
+import Edition1 from './components/Editions/EditionPages/Edition1';
 
 
 const App = () => {

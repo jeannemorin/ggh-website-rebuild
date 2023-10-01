@@ -1,11 +1,16 @@
 import React from 'react'
 
+import Marquee from "react-fast-marquee";
+import { Link } from 'react-scroll';
+
 import Banner from "../Banner"
 
 import Header from '../../Header_Nav/HeaderTopTwoColors'
 import FooterSimple from '../../Footer/FooterSimple'
 import Summary from '../Summary'
 import Projects from '../Projects'
+
+import { BsArrowRight } from "react-icons/bs"
 
 import Logo from "../../../assets/editions/1.png";
 
@@ -25,6 +30,7 @@ import totallyspes from '../../../assets/teams/1/totallyspes.webp';
 import treeflop from '../../../assets/teams/1/treeflop.webp';
 import yedi from '../../../assets/teams/1/yedi.webp';
 import bubble from '../../../assets/teams/1/bubbleteam.webp';
+import Image from "../../../assets/editions/1/winner.jpg"
 
 const projects = [
     [
@@ -185,9 +191,33 @@ const Edition1 = () =>  {
     return (
         <div>
             <Header />
-            <Banner edition={edition.number} dates={edition.dates} image={Logo}/>
-            <Summary summary={edition.summary} image={edition.number} />
-            <Projects projects={projects} themes={themes} />
+                <div className='container mx-auto'>
+                    <Banner edition={edition.number} dates={edition.dates} image={Logo}/>
+                    <Summary summary={edition.summary} image={edition.image} />
+                    <Projects projects={projects} themes={themes} />
+                
+                    <section id="gallery" className='mb-20'>
+                        <h1 className='h1 mt-24'>Galerie</h1>
+                                                  
+                        <Marquee className='mt-10 mb-4'>
+                            <img src={require("../../../assets/editions/1/1.jpg")} alt="" />
+                            <img src={require("../../../assets/editions/1/2.jpg")} alt="" />
+                            <img src={require("../../../assets/editions/1/3.jpg")} alt="" />
+                            <img src={require("../../../assets/editions/1/4.jpg")} alt="" />
+                            <img src={require("../../../assets/editions/1/5.jpg")} alt="" />
+                            <img src={require("../../../assets/editions/1/6.jpg")} alt="" />
+                            <img src={require("../../../assets/editions/1/7.jpg")} alt="" />
+                            <img src={require("../../../assets/editions/1/8.jpg")} alt="" />
+                            <img src={require("../../../assets/editions/1/9.jpg")} alt="" />
+                            <img src={require("../../../assets/editions/1/10.jpg")} alt="" />
+                        </Marquee>
+
+                        <Link to='https://www.flickr.com/photos/club-ephemere/albums/72177720295591573' activeClass='active' smooth={true} spy={true} className='flex flex-row text-gradient btn-link cursor-pointer text-[20px] items-center'>
+                                Voir toutes les photos
+                                <BsArrowRight className='ml-1' />
+                        </Link>
+                    </section>
+                </div>
             <FooterSimple />
         </div>
         

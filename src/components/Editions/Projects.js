@@ -13,7 +13,7 @@ const Projects = ({projects, themes}) => {
     const incrementCount = () => {
         i = i+1
     };
-    
+
     return (<section id="projects" className=''>
         <div className='container mx-auto'>
             {themes.map( theme => 
