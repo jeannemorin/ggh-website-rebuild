@@ -59,9 +59,8 @@ const Banner = () => {
             items-center mb-12 mx-auto lg:mx-0'
             >
 
-            <Link to='https://www.helloasso.com/associations/gotta-go-hack/evenements/hackathon-gotta-go-hack-edition-2-2' activeClass='active' 
-              smooth={true} 
-              spy={true} ><button className='btn btn-lg'>Participer</button></Link>
+            <a href='https://www.helloasso.com/associations/gotta-go-hack/evenements/hackathon-gotta-go-hack-edition-2-2'>
+              <button className='btn btn-lg'>Participer</button></a>
             <Link to='about' activeClass='active' 
               smooth={true} 
               spy={true} className='text-gradient btn-link cursor-pointer text-[20px]'>En savoir plus</Link>
