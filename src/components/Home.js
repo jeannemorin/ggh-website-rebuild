@@ -12,6 +12,7 @@ import Impact from './Hackathon/Impact';
 import About from './Hackathon/About';
 import Partners from './Hackathon/Partner';
 import Insights from './Hackathon/Insights';
+import Contact from "./Contact"
 
 
 const Home = () => {
@@ -21,11 +22,8 @@ const Home = () => {
         <Banner />
         <TextSlider />
         <About />
-        <Insights />
         <Editions />
-        <Partners />
-        <ThreeCol />
-        <Impact />
+        <Contact />
         <FooterSimple />
     </div>)
 }

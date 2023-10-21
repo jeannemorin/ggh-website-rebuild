@@ -26,9 +26,9 @@ const Header = () => {
                 tracking-[1px] items-center text-[20px] ` }>
                     <div className='sm:opacity-0 lg:opacity-100 flex gap-x-4 lg:gap-x-8'>
                             <a href='/' className=' transition '> Home</a>
-                            <a href='/' className=' transition '>Asso</a>
+                            <a href='/about' className=' transition '>Asso</a>
                             <a href='/' className=' transition'> Actualités'</a>
-                            <a href='/' className=' transition'> Les Editions</a>
+                            <a href='/archives' className=' transition'> Les Editions</a>
                             <a href='/' className=' transition'> Sponsor</a>
                     </div>
                         <Link to='contact' activeClass='active' 

@@ -14,14 +14,14 @@ import Join from './Asso/Banner/Join';
 
 const hacktive = [
     {
-        name: 'Lorine Truong',
+        name: 'Lorine Truong thanh dang',
         photo: Photo,
         role: 'Présidente',
     },
     {
-        name: 'Jeanne Morin',
+        name: 'Mikael Sourati',
         photo: Photo,
-        role: 'Vice présidente',
+        role: 'Vice président',
     },
     {
         name: 'Elie Abi-khalil',
@@ -29,14 +29,9 @@ const hacktive = [
         role: 'Trésorier',
     },
     {
-        name: '',
+        name: 'Noémie Aubert',
         photo: Photo,
         role: 'Secrétaire',
-    },
-    {
-        name: 'Jeanne Morin',
-        photo: Photo,
-        role: 'Présidente',
     },
     {
         name: 'Ronan Pédron',
@@ -44,14 +39,19 @@ const hacktive = [
         role: 'Respo event',
     },
     {
-        name: 'Alexandre Lemonnier',
+        name: 'Jeanne Morin',
         photo: Photo,
-        role: 'Trésorier',
+        role: 'Respo Hackathon',
     },
     {
-        name: 'Tao Blancheton',
+    name: 'Amanda Lassel',
         photo: Photo,
-        role: 'Secrétaire',
+        role: 'Respo Créa',
+    },
+    {
+        name: 'Alexis Mer',
+        photo: Photo,
+        role: 'Respo Talk',
     },
 ]
 
@@ -64,7 +64,6 @@ const Asso = () => {
         <TeamHacktiveBanner />
         <TeamRoundMembersBanner members={hacktive}/>
         <TeamWoodchackBanner />
-        <TeamRoundMembersBanner members={hacktive}/>
         <Join />
         <FooterSimple />
     </div>)

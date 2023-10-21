@@ -8,7 +8,7 @@ import {motion } from 'framer-motion'
 
 import {fadeIn} from '../../../variants'
 
-import Team from '../../../assets/sarah.png'
+import Image from '../../../assets/logo.png'
 
 import { Link } from 'react-scroll';
 
@@ -27,11 +27,11 @@ const About_Asso = () => {
           initial="hidden" 
           whileInView={'show'} 
           viewport={{once: true, amount: 0.3}}
-          className='hidden lg:flex flex-1 bg-contain bg-no-repeat h-screen
+          className='hidden lg:flex flex-1 bg-contain bg-no-repeat
           bg-top'
           >
 
-          <img src={Team} alt='' />
+          <img src={Image} alt='' />
         </motion.div>
 
         {/*text*/}
@@ -43,9 +43,9 @@ const About_Asso = () => {
         className='flex-1'>
           <h1 className='h1 text-red'>à propos</h1>
           <h2 className='h2 mb-4'>Gotta Go Hack, l'association pour entreprendre et innover
-          à EPITA.</h2>
+          à EPITA & EPITECH.</h2>
           <p className='mb-8'>
-          Depuis février 2021, Gotta Go Hack promeut l'innovation et l'entrepreneuriat auprès des étudiants ingénieurs, notamment à travers des Hackathons. 
+          Depuis février 2021, Gotta Go Hack promeut l'innovation et l'entrepreneuriat auprès des étudiants du campus IONIS Kremlin-Bicêtre, notamment à travers des Hackathons & des talks.
           </p>
           {/*stats*/ }
           <div className='flex gap-x-6 lg:gap-x-10 mb-12'>
