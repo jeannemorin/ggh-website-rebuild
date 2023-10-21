@@ -2,6 +2,10 @@ import React from 'react'
 
 import PropTypes from 'prop-types';
 
+import Cup from "../../assets/cup.svg";
+import Second from "../../assets/second.png";
+import Third from "../../assets/third.png";
+
 
 
 
@@ -20,8 +24,9 @@ const Projects = ({projects, themes}) => {
                 <div className='flex flex-col gap-y-10'>
                     <h1 className='h1'>Thème : {theme.name}</h1>
                     <div className='flex flex-col gap-y-16'>
-                        {projects[i].map(project => 
-                            <Project name={project.name} image={project.image} content={project.content} />)
+                        {projects[i].map(project =>
+                            <Project name={project.name} image={project.image} content={project.content} podium={i}/>)
+                            
                         }
                         </div>
                     {incrementCount()}
@@ -40,11 +45,27 @@ export default Projects;
 
 const Project = ({name, image, content, podium}) => {
 
+    function podiumIcon(podium) {
+        switch(podium) {
+            case 0:
+                return Cup
+            case 1:
+                return Second
+            case 2:
+                return Third  
+            default:
+                return null
+        }
+    }
+      
+
     return (
         <div className='flex flex-row h-[120px] gap-x-10'>
             <img src={image} alt="" />
             <div className='flex flex-col'>
-                <h3 className='h3 mb-1'>{name}</h3>
+                <h3 className='h3 mb-1 flex flex-row'>
+                    {name}
+                </h3>               
                 <p>{content}</p>
             </div>
         </div>

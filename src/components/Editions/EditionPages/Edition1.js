@@ -265,10 +265,10 @@ const Edition1 = () =>  {
                             <img src={require("../../../assets/editions/1/10.jpg")} alt="" />
                         </Marquee>
 
-                        <Link to='https://www.flickr.com/photos/club-ephemere/albums/72177720295591573' activeClass='active' smooth={true} spy={true} className='flex flex-row text-gradient btn-link cursor-pointer text-[20px] items-center'>
+                        <a href='https://www.flickr.com/photos/club-ephemere/albums/72177720295591573' className='flex flex-row text-gradient btn-link cursor-pointer text-[20px] items-center'>
                                 Voir toutes les photos
                                 <BsArrowRight className='ml-1' />
-                        </Link>
+                        </a>
                     </section>
                 </div>
             <FooterSimple />
