@@ -4,12 +4,11 @@ import {motion } from 'framer-motion'
 
 import {fadeIn} from '../../variants'
 
-
 import Code from '../../assets/hackathon/code.png'
 
 const About = () => {
     return (
-        <section id='hacktive' className='section' > 
+        <section id='about' className='section' > 
           <div className='container mx-auto'>
             <div className='flex flex-col lg:flex-row lg:items-center 
             lg:gap-x-32 gap-y-12 h-screen'>
@@ -45,6 +44,7 @@ const About = () => {
                 {/*button*/}
                 <div className='flex gap-x-8 items-center'>
                   <a href='https://www.helloasso.com/associations/gotta-go-hack/evenements/hackathon-gotta-go-hack-edition-2-2' smooth={true}><button className='btn btn-lg'>Participer</button></a>
+
                 </div>
               </motion.div>
             </div>

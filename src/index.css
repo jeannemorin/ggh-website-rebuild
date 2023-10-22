@@ -87,13 +87,37 @@
 
 }
 
+.discord {
+  animation: shake-on-repeat 4.72s ease infinite;
+  transform-origin: 50% 50%;
+}
 
-.social:hover {
-  /* Start the shake animation and make the animation last for 0.5 seconds */
-  animation: shake 0.5s;
+.insta {
+  animation: shake-on-repeat 4.9s ease infinite;
+  transform-origin: 50% 50%;
+}
 
-  /* When the animation is finished, start again */
-  animation-iteration-count: infinite;
+.linkedin {
+  animation: shake-on-repeat 5.1s ease infinite;
+  transform-origin: 50% 50%;
+}
+
+
+.shakingImg:hover {
+
+  animation: shake 0.5s ease infinite;
+}
+
+
+@keyframes shake-on-repeat {
+  0% { transform:translate(0,0) }
+ 1.78571% { transform: translate(-1px, -2px) rotate(-1deg); }
+ 3.57143% { transform: translate(-3px, 0px) rotate(1deg); }
+ 5.35714% { transform: translate(3px, 2px) rotate(0deg); }
+ 7.14286% { transform: translate(1px, -1px) rotate(1deg); }
+ 8.92857% { transform: translate(-1px, 2px) rotate(-1deg); }
+ 10.71429% { transform:translate(0,0) }
+ 100% { transform:translate(0,0) }
 }
 
 @keyframes shake {

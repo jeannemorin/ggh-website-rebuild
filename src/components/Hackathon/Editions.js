@@ -9,7 +9,9 @@ import img2 from '../../assets/editions/2.png';
 import img3 from '../../assets/editions/3.png';
 
 const Editions = () => {
-  return <section id='work' className='section'>
+
+  return <section id='editions' className='section'>
+
     <div className='container mx-auto'>
       <div className='flex flex-col lg:flex-row gap-x-10'>
         <motion.div 
@@ -25,6 +27,7 @@ const Editions = () => {
 
             {/*Max 6 ligns of text to align the cards*/}
             <p className='max-w-sm mb-10'> Depuis 2021, le Hackathon Gotta Go Hack rythme le campus EPITA EPITECH parisien avec 2 éditions par an. Pour chaque édition, nous travaillons avec différents partenaires et proposons des thèmes uniques. Découvrez notre folle aventure depuis ses débuts et retrouvez tous les projets présentés.</p>
+
             <a href="archives" ><button className='btn btn-lg mb-1'>Toutes les éditions</button></a>
           </div>
 
@@ -45,6 +48,7 @@ const Editions = () => {
           </a>
         </motion.div>
 
+
         <motion.div 
           variants={fadeIn('left',0.2)}
           initial='hidden'
@@ -52,6 +56,7 @@ const Editions = () => {
           viewport={{once: false, amount: 0.3}}
           className='flex-1 flex flex-col gap-y-12'>
         {/*image*/}
+
         <a href="archives/edition2">
           <div className='group relative overflow-hidden border-2 
           border-white/50 rounded-xl '>
@@ -66,6 +71,7 @@ const Editions = () => {
             </div>
           </div>
         </a>
+
         {/*image*/}
         <a href="archives/edition1">
           <div className='group relative overflow-hidden border-2 
@@ -86,5 +92,6 @@ const Editions = () => {
     </div>
   </section>;
 };
+
 
 export default Editions;
