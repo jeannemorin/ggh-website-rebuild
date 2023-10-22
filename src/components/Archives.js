@@ -6,7 +6,7 @@ import {motion } from 'framer-motion'
 import Events from './Editions/Events';
 import Header from './Header_Nav/HeaderTopTwoColors';
 import FooterSimple from './Footer/FooterSimple';
-import under_header from './Under_header';
+import UnderHeader from './Under_header';
 
 const hackathons=[
   {
@@ -52,10 +52,10 @@ const Archives = () => {
   return (
     <div>
         <Header />
-
-        <Events events={hackathons} title="Hackathons" description="Les Hackathons sont nos évènements phares depuis mai 2021 !"/>
+        <UnderHeader/>
+        <Events className="mt-8" events={hackathons} title="Hackathons" description="Les Hackathons sont nos évènements phares depuis mai 2021 !"/>
         <Events events={afterworks} title="Afterworks" description="Des afterworks pour découvrir des technologies et rencontrer des startups."/>
-
+        
         <FooterSimple />
    </div>
   );

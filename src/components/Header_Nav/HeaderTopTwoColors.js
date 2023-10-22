@@ -24,7 +24,7 @@ const Header = () => {
 
                 <nav className={`${header ? 'text-primary' : 'text-primary'} flex gap-x-4 lg:gap-x-8
                 tracking-[1px] items-center text-[20px] ` }>
-                    <div className='sm:opacity-0 lg:opacity-100 flex gap-x-4 lg:gap-x-8'>
+                    <div className='invisible md:visible flex gap-x-4 lg:gap-x-8'>
                             <a href='/' className=' transition '> Home</a>
                             <a href='/about' className=' transition '>Asso</a>
                             <a href='/' className=' transition'> Actualités'</a>
