@@ -4,8 +4,6 @@ import {BsArrowUpRight} from 'react-icons/bs'
 import {motion } from 'framer-motion'
 import { fadeIn } from '../../variants';
 
-import { Link } from 'react-scroll';
-
 import PropTypes from 'prop-types';
 
 

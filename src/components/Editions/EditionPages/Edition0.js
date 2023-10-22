@@ -4,7 +4,6 @@ import Banner from "../Banner"
 
 import Header from '../../Header_Nav/HeaderTopTwoColors'
 import FooterSimple from '../../Footer/FooterSimple'
-import Summary from '../Summary'
 import Projects from '../Projects'
 
 //import Cup from '../../assets/cup.svg'

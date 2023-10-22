@@ -2,12 +2,6 @@ import React from 'react'
 
 import PropTypes from 'prop-types';
 
-import Cup from "../../assets/cup.svg";
-import Second from "../../assets/second.png";
-import Third from "../../assets/third.png";
-
-
-
 
 const Projects = ({projects, themes}) => {
 
@@ -45,7 +39,7 @@ export default Projects;
 
 const Project = ({name, image, content, podium}) => {
 
-    function podiumIcon(podium) {
+    /*function podiumIcon(podium) {
         switch(podium) {
             case 0:
                 return Cup
@@ -56,7 +50,7 @@ const Project = ({name, image, content, podium}) => {
             default:
                 return null
         }
-    }
+    }*/
       
 
     return (

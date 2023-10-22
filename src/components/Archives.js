@@ -1,8 +1,5 @@
 import React from 'react';
 
-import {BsArrowUpRight} from 'react-icons/bs'
-import {motion } from 'framer-motion'
-
 import Events from './Editions/Events';
 import Header from './Header_Nav/HeaderTopTwoColors';
 import FooterSimple from './Footer/FooterSimple';

@@ -1,7 +1,6 @@
 import React from 'react'
 
 import Marquee from "react-fast-marquee";
-import { Link } from 'react-scroll';
 import {motion } from 'framer-motion'
 import {fadeIn} from '../../../variants'
 
@@ -9,7 +8,6 @@ import Banner from "../Banner"
 
 import Header from '../../Header_Nav/HeaderTopTwoColors'
 import FooterSimple from '../../Footer/FooterSimple'
-import Summary from '../Summary'
 import Projects from '../Projects'
 
 import { BsArrowRight } from "react-icons/bs"

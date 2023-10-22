@@ -7,11 +7,7 @@ import Banner from './Launching';
 import TextSlider from './TextSlider';
 
 import Editions from './Hackathon/Editions';
-import ThreeCol from './Hackathon/ThreeCol';
-import Impact from './Hackathon/Impact';
 import About from './Hackathon/About';
-import Partners from './Hackathon/Partner';
-import Insights from './Hackathon/Insights';
 import Contact from "./Contact"
 
 
