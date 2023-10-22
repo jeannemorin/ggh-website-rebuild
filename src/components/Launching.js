@@ -31,8 +31,9 @@ const Banner = () => {
             initial="hidden" 
             whileInView={'show'} 
             viewport={{once: false, amount: 0.7}} 
-            className='text-[55px] font-bold font-primary leading-[0.8] lg:text-[110px]'>
-           
+
+            className='text-[55px] font-primary font-bold leading-[0.8] lg:text-[110px]'>
+
             HACKATHON <span>EDITION #4</span>
           </motion.h1>
           <motion.div 

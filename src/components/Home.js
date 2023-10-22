@@ -8,7 +8,9 @@ import TextSlider from './TextSlider';
 import About from './Hackathon/About';
 import Edition from './Hackathon/Editions';
 
-import Contact from './Contact';
+import Editions from './Hackathon/Editions';
+import About from './Hackathon/About';
+import Contact from "./Contact"
 
 
 const Home = () => {
@@ -18,7 +20,7 @@ const Home = () => {
         <Banner />
         <TextSlider />
         <About />
-        <Edition />
+        <Editions />
         <Contact />
         <FooterSimple />
     </div>)

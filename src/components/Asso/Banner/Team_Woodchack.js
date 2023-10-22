@@ -12,7 +12,7 @@ const Team_Hacktive = () => {
     return (
         <section id='hacktive' className='section' > 
           <div className='container mx-auto'>
-            <div className='flex flex-col gap-y-10 lg:flex-row lg:items-center 
+            <div className='flex flex-col lg:flex-row lg:items-center 
             lg:gap-x-20 lg:gap-y-0 h-screen'>
               {/*img*/}
               <motion.div 
@@ -32,9 +32,9 @@ const Team_Hacktive = () => {
               initial='hidden'
               whileInView={'show'}
               viewport={{once: false, amount: 0.3}}
-              className='flex-1'>
+              className='flex flex-1 flex-col lg:items-start items-center'>
                 <h3 className='h3 mb-4'>TEAM WOODCHACK</h3>
-                <p className='mb-6'>
+                <p className='mb-6 text-center lg:text-start'>
                 La team Woodchack est l’équipe de staff de l’association. Ses membres sont présents sur nos évènements tout au long de l’année et dans toute la France. 
                 </p>
 

@@ -43,7 +43,8 @@
 }
 
 .text-accent {
-  color:#ff5757
+  color:#ff5757;
+  font-weight: 600;
 }
 
 @layer base {
@@ -80,6 +81,10 @@
   .section {
     @apply py-8 lg:py-24 lg:h-screen flex items-center;
   }
+  .section-close {
+    @apply py-8 lg:py-36 flex items-center;
+  }
+
 }
 
 .discord {

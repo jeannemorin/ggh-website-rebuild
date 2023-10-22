@@ -12,46 +12,46 @@ import TeamRoundMembersBanner from './Asso/Banner/Team_Round';
 import Photo from '../assets/team/avatar.svg';
 import Join from './Asso/Banner/Join';
 
-const members = [
+const hacktive = [
     {
-        name: 'Jeanne Morin',
+        name: 'Lorine Truong thanh dang',
         photo: Photo,
         role: 'Présidente',
     },
     {
-        name: 'Ronan Pédron',
+        name: 'Mikael Sourati',
         photo: Photo,
         role: 'Vice président',
     },
     {
-        name: 'Alexandre Lemonnier',
+        name: 'Elie Abi-khalil',
         photo: Photo,
         role: 'Trésorier',
     },
     {
-        name: 'Tao Blancheton',
+        name: 'Noémie Aubert',
         photo: Photo,
         role: 'Secrétaire',
+    },
+    {
+        name: 'Ronan Pédron',
+        photo: Photo,
+        role: 'Respo event',
     },
     {
         name: 'Jeanne Morin',
         photo: Photo,
-        role: 'Présidente',
+        role: 'Respo Hackathon',
     },
     {
-        name: 'Ronan Pédron',
+    name: 'Amanda Lassel',
         photo: Photo,
-        role: 'Vice président',
+        role: 'Respo Créa',
     },
     {
-        name: 'Alexandre Lemonnier',
+        name: 'Alexis Mer',
         photo: Photo,
-        role: 'Trésorier',
-    },
-    {
-        name: 'Tao Blancheton',
-        photo: Photo,
-        role: 'Secrétaire',
+        role: 'Respo Talk',
     },
 ]
 
@@ -62,9 +62,8 @@ const Asso = () => {
         <UnderHeader />
         <AboutAssoBanner />
         <TeamHacktiveBanner />
-        <TeamRoundMembersBanner members={members}/>
+        <TeamRoundMembersBanner members={hacktive}/>
         <TeamWoodchackBanner />
-        <TeamRoundMembersBanner members={members}/>
         <Join />
         <FooterSimple />
     </div>)

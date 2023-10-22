@@ -4,8 +4,6 @@ import {motion } from 'framer-motion'
 
 import {fadeIn} from '../../variants'
 
-import { Link } from "react-scroll";
-
 import Code from '../../assets/hackathon/code.png'
 
 const About = () => {
@@ -38,14 +36,15 @@ const About = () => {
                   <p className='mb-3'>
                   Pendant <span className='font-semibold'>2 jours et 2 nuits</span>, des équipes de 2-4 étudiants travaillent pour <span className='font-semibold'> prototyper et présenter un projet innovant </span> autour d’une problématique. <br />
                   </p>
-                  <p className='lg:mb-3 mb-8'>Accompagnées par des coachs et des workshops, ces équipes développent un produit concret ainsi que son business plan, comme une vraie startup ! Le hackathon se termine 
-                  sur une session de pitch et de démo devant un jury de professionnels.
+                  <p className='lg:mb-3 mb-8'>Accompagnées par des coachs et des workshops, ces équipes créent un produit concret ainsi que son business plan, comme une vraie startup ! Le hackathon se termine 
+                  sur une session de pitch et de demo devant un jury de professionnels.
                   </p>
                 </div>
 
                 {/*button*/}
                 <div className='flex gap-x-8 items-center'>
-                  <Link to='editions' smooth={true}><button className='btn btn-lg'>En savoir plus</button></Link>
+                  <a href='https://www.helloasso.com/associations/gotta-go-hack/evenements/hackathon-gotta-go-hack-edition-2-2' smooth={true}><button className='btn btn-lg'>Participer</button></a>
+
                 </div>
               </motion.div>
             </div>
