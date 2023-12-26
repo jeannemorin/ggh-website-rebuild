@@ -54,10 +54,10 @@ const Project = ({name, image, content, podium}) => {
       
 
     return (
-        <div className='flex flex-row h-[120px] gap-x-10'>
-            <img src={image} alt="" />
+        <div className='flex flex-col gap-y-10 lg:flex-row lg:gap-x-10 container mx-auto'>
+            <img src={image} className="lg:h-[150px]" alt="" />
             <div className='flex flex-col'>
-                <h3 className='h3 mb-1 flex flex-row'>
+                <h3 className='h3 mb-4 leading-7'>
                     {name}
                 </h3>               
                 <p>{content}</p>
