@@ -28,9 +28,8 @@ const Header = () => {
                     <div className='invisible md:visible flex gap-x-4 lg:gap-x-8'>
                             <a href='/' className=' transition '> Home</a>
                             <a href='/about' className=' transition '>Asso</a>
-                            <a href='/' className=' transition'> Actualités'</a>
-                            <a href='/archives' className=' transition'> Les Editions</a>
-                            <a href='/' className=' transition'> Sponsor</a>
+                            <a href='/archives' className=' transition'> Nos évènements</a>
+                            <a href='/' className=' transition'> Partenaire</a>
                     </div>
                         <Link to='contact' activeClass='active' 
                         smooth={true} ><button className='btn btn-sm lg:btn-lg'>Contact</button></Link>

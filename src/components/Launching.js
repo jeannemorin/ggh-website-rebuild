@@ -34,7 +34,7 @@ const Banner = () => {
 
             className='text-[55px] font-primary font-bold leading-[0.8] lg:text-[110px]'>
 
-            HACKATHON <span>EDITION #4</span>
+            HACKATHON <span>EDITION #5</span>
           </motion.h1>
           <motion.div 
             variants={fadeIn('up',0.4)} 
@@ -42,7 +42,7 @@ const Banner = () => {
             whileInView={'show'} 
             viewport={{once: false, amount: 0.7}} className='bv-6 text-[36px] lg:text-[60px] font-secondary
           font semi-bold uppercase leading-[1]' >
-            <span className='text-black mr-4'>10/11/12 NOV 2023</span>
+            <span className='text-black mr-4'>SPRING 2024</span>
           </motion.div>
           <motion.p 
           variants={fadeIn('up',0.5)} 
@@ -60,8 +60,8 @@ const Banner = () => {
             items-center mb-12 mx-auto lg:mx-0'
             >
 
-            <a href='https://www.helloasso.com/associations/gotta-go-hack/evenements/hackathon-gotta-go-hack-edition-2-2'>
-              <button className='btn btn-lg'>Participer</button></a>
+            <a href=''>
+              <button className='btn btn-lg'>L'édition #4</button></a>
             <Link to='about' activeClass='active' 
               smooth={true} 
               spy={true} className='text-gradient btn-link cursor-pointer text-[20px]'>En savoir plus</Link>
