@@ -9,12 +9,12 @@ import PropTypes from 'prop-types';
 
 const Events = ({events, title, description}) => {
     return (
-    <section id={title} className='section'>
+    <div id={title} className='mt-40 mb-40'>
       <div className="container mx-auto">
 
         <div className='flex flex-col lg:flex-row'>
           {/*title of the section*/}
-          <motion.div 
+          <motion.div
           variants={fadeIn('right',0.3)}
           initial='hidden'
           whileInView={'show'}
@@ -36,7 +36,7 @@ const Events = ({events, title, description}) => {
           className='flex-1'>
             {/*event list*/}
             <div>
-              {events.map((event, index) => {
+              {events.toReversed().map((event, index) => {
                 return <a href={event.href} smooth={true}>
                   <div className='border-b border-black h-[146px] mb-[38px] flex'key={index}>
                     <div className='max-w-[476px]'>
@@ -61,7 +61,7 @@ const Events = ({events, title, description}) => {
         </div>
       </div>
   
-    </section>
+    </div>
     );
   };
   

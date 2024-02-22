@@ -5,6 +5,11 @@ import Header from './Header_Nav/HeaderTopTwoColors';
 import FooterSimple from './Footer/FooterSimple';
 import UnderHeader from './Under_header';
 
+import {Link } from 'react-scroll';
+import { TbMicrophone2 } from "react-icons/tb";
+import { MdComputer } from "react-icons/md";
+import { IoBeerOutline } from "react-icons/io5";
+
 const hackathons=[
   {
     name: 'Edition #0',
@@ -27,6 +32,12 @@ const hackathons=[
   {
     name: 'Edition #3',
     description: 'Hackathon GGH #3 Winter Edition 2022 - En partenariat avec Massa & Société Générale',
+    link: 'Découvrir',
+    href:"archives"
+  },
+  {
+    name: 'Edition #4',
+    description: 'Hackathon GGH #4 Winter Edition 2023 - En partenariat avec SLB',
     link: 'Découvrir',
     href:"archives"
   }
@@ -59,9 +70,10 @@ const Archives = () => {
     <div>
         <Header />
         <UnderHeader />
-        <Events events={talks} title="Talks" description="Des moments d'échanges uniques avec des Entrepreneurs."/>
         <Events events={hackathons} title="Hackathons" description="Des Hackathons, nos évènements phares depuis mai 2021 !"/>
+        <Events events={talks} title="Talks" description="Des moments d'échanges uniques avec des Entrepreneurs."/>
         <Events events={afterworks} title="Afterworks" description="Des afterworks pour découvrir des technologies et rencontrer des startups."/>
+
         <FooterSimple />
    </div>
   );
