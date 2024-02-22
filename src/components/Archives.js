@@ -5,11 +5,6 @@ import Header from './Header_Nav/HeaderTopTwoColors';
 import FooterSimple from './Footer/FooterSimple';
 import UnderHeader from './Under_header';
 
-import {Link } from 'react-scroll';
-import { TbMicrophone2 } from "react-icons/tb";
-import { MdComputer } from "react-icons/md";
-import { IoBeerOutline } from "react-icons/io5";
-
 const hackathons=[
   {
     name: 'Edition #0',
