@@ -36,23 +36,32 @@ const afterworks=[
     {
       name: 'Afterwork GGH x Qonto',
       description: 'Afterwork découverte des technologies qonto - Septembre 2022',
-      link: 'Découvrir',
     },
     {
         name: 'Afterwork GGH x Datadog',
         description: 'Afterwork découverte des technologies datadog - Octobre 2023',
-        link: 'Découvrir',
       },
+]
+
+const talks=[
+  {
+    name: 'Gotta Go Talk #1 : L\'expérience Y Combinator',
+    description: 'Speaker : Benjamin Netter, Founder @Riot, et Tom Nguyen, CEO @Café  - Décembre 2023',
+  },
+  {
+      name: 'Gotta Go Talk #2 : Découvrir STATION F',
+      description: 'Speaker : Ethan Safar, CEO @Payconsent - Février 2024',
+    },
 ]
 
 const Archives = () => {
   return (
     <div>
         <Header />
-        <UnderHeader/>
-        <Events className="mt-8" events={hackathons} title="Hackathons" description="Les Hackathons sont nos évènements phares depuis mai 2021 !"/>
+        <UnderHeader />
+        <Events events={talks} title="Talks" description="Des moments d'échanges uniques avec des Entrepreneurs."/>
+        <Events events={hackathons} title="Hackathons" description="Des Hackathons, nos évènements phares depuis mai 2021 !"/>
         <Events events={afterworks} title="Afterworks" description="Des afterworks pour découvrir des technologies et rencontrer des startups."/>
-        
         <FooterSimple />
    </div>
   );
