@@ -3,6 +3,7 @@ import React from 'react'
 import Banner from "../Banner"
 
 import Header from '../../Header_Nav/HeaderTopTwoColors'
+import UnderHeader from '../../Under_header';
 import FooterSimple from '../../Footer/FooterSimple'
 import Projects from '../Projects'
 
@@ -116,6 +117,7 @@ const Edition0 = () =>  {
     return (
         <div>
             <Header />
+            <UnderHeader />
             <Banner edition={edition.number} dates={edition.dates} image={Logo}/>
             <Projects projects={projects} themes={themes} />
             <FooterSimple />
