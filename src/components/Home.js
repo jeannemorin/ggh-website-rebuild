@@ -9,7 +9,6 @@ import About from './Hackathon/About';
 import Edition from './Hackathon/Editions';
 
 import Editions from './Hackathon/Editions';
-import About from './Hackathon/About';
 import Contact from "./Contact"
 
 
