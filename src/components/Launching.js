@@ -60,7 +60,7 @@ const Banner = () => {
             items-center mb-12 mx-auto lg:mx-0'
             >
 
-            <a href=''>
+            <a href='/'>
               <button className='btn btn-lg'>L'édition #4</button></a>
             <Link to='about' activeClass='active' 
               smooth={true} 
