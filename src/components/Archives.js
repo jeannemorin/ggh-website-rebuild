@@ -34,7 +34,7 @@ const hackathons=[
     name: 'Edition #4',
     description: 'Hackathon GGH #4 Winter Edition 2023 - En partenariat avec SLB',
     link: 'Découvrir',
-    href:"archives"
+    href:"archives/edition4"
   }
 ];
 

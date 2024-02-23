@@ -7,6 +7,7 @@ import {fadeIn} from '../../../variants'
 import Banner from "../Banner"
 
 import Header from '../../Header_Nav/HeaderTopTwoColors'
+import UnderHeader from '../../Under_header';
 import FooterSimple from '../../Footer/FooterSimple'
 import Projects from '../Projects'
 
@@ -191,6 +192,7 @@ const Edition1 = () =>  {
     return (
         <div>
             <Header />
+            <UnderHeader />
                 <div className='container mx-auto'>
                     <Banner edition={edition.number} dates={edition.dates} image={Logo}/>
                     
