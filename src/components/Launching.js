@@ -60,7 +60,7 @@ const Banner = () => {
             items-center mb-12 mx-auto lg:mx-0'
             >
 
-            <a href='http://eepurl.com/iKOgSM'>
+            <a href='http://eepurl.com/iKOgSM' target="_blank" rel="noreferrer">
               <button className='btn btn-lg'>Me tenir informé</button></a>
             <Link to='archives/edition4' activeClass='active' 
               smooth={true} 
