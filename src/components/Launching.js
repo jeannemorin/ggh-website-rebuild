@@ -60,11 +60,11 @@ const Banner = () => {
             items-center mb-12 mx-auto lg:mx-0'
             >
 
-            <a href='/'>
-              <button className='btn btn-lg'>L'édition #4</button></a>
-            <Link to='about' activeClass='active' 
+            <a href='http://eepurl.com/iKOgSM'>
+              <button className='btn btn-lg'>Me tenir informé</button></a>
+            <Link to='archives/edition4' activeClass='active' 
               smooth={true} 
-              spy={true} className='text-gradient btn-link cursor-pointer text-[20px]'>En savoir plus</Link>
+              spy={true} className='text-gradient btn-link cursor-pointer text-[20px]'>L'édition #4</Link>
         </motion.div>
 
         {/* socials*/}
