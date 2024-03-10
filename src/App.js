@@ -9,6 +9,7 @@ import Edition1 from './components/Editions/EditionPages/Edition1';
 import Edition2 from './components/Editions/EditionPages/Edition2';
 import Archives from './components/Archives';
 import Edition4 from './components/Editions/EditionPages/Edition4';
+import Partnership from './components/Partnership';
 
 
 const App = () => {
@@ -22,6 +23,7 @@ const App = () => {
           <Route path="/archives/edition1" element={<Edition1 />} />
           <Route path="/archives/edition2" element={<Edition2 />} />
           <Route path="/archives/edition4" element={<Edition4 />} />
+          <Route path="/partnership" element={<Partnership />} />
 
         </Routes>
   );

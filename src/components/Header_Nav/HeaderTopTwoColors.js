@@ -29,7 +29,7 @@ const Header = () => {
                             <a href='/' className=' transition '> Home</a>
                             <a href='/about' className=' transition '>Asso</a>
                             <a href='/archives' className=' transition'> Nos évènements</a>
-                            <a href='/' className=' transition'> Partenaire</a>
+                            <a href='/partnership' className=' transition'> Partenaire</a>
                     </div>
                         <Link to='contact' activeClass='active' 
                         smooth={true} ><button className='btn btn-sm lg:btn-lg'>Contact</button></Link>
