@@ -24,7 +24,7 @@ const Banner = () => {
            whileInView={'show'} 
            viewport={{once: false, amount: 0.7}}
            className='font-special font-semibold md:text-[26px] mb-6 leading-[46px] text-[18px]'>
-            Site en reconstruction avant le
+            C'est parti pour le
            </motion.h4>
           <motion.h1 
             variants={fadeIn('up',0.3)} 
@@ -42,7 +42,7 @@ const Banner = () => {
             whileInView={'show'} 
             viewport={{once: false, amount: 0.7}} className='bv-6 text-[36px] lg:text-[60px] font-secondary
           font semi-bold uppercase leading-[1]' >
-            <span className='text-black mr-4'>SPRING 2024</span>
+            <span className='text-black mr-4'>14/15/16 JUIN</span>
           </motion.div>
           <motion.p 
           variants={fadeIn('up',0.5)} 
@@ -60,11 +60,11 @@ const Banner = () => {
             items-center mb-12 mx-auto lg:mx-0'
             >
 
-            <a href='http://eepurl.com/iKOgSM' target="_blank" rel="noreferrer">
-              <button className='btn btn-lg'>Me tenir informé</button></a>
-            <Link to='archives/edition4' activeClass='active' 
+            <a href='https://www.helloasso.com/associations/gotta-go-hack/evenements/hackathon-gotta-go-hack-edition-5' target="_blank" rel="noreferrer">
+              <button className='btn btn-lg'>Participer</button></a>
+            <Link to='about' activeClass='active' 
               smooth={true} 
-              spy={true} className='text-gradient btn-link cursor-pointer text-[20px]'>L'édition #4</Link>
+              spy={true} className='text-gradient btn-link cursor-pointer text-[20px]'>En savoir plus</Link>
         </motion.div>
 
         {/* socials*/}
