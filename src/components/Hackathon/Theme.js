@@ -1,6 +1,6 @@
 import React from "react";
 
-import Img from "../../assets/portfolio-img1.png";
+import Img from "../../assets/hackathon/thème 1.png";
 
 import {motion } from 'framer-motion'
 
@@ -17,7 +17,7 @@ const Theme = () => {
         <section id="theme" className="section bg-black">
             <div className="container mx-auto">
                 <h1 className="h1 text-white">THEMES</h1>
-                <h3 className="h3 text-white">Des trucs à dire sur le fait que les thèmes sont pas reveal</h3>
+                <h3 className="h3 text-white">Deux thèmes seront à l'honneur pour cette édition</h3>
                 
                 {/*images*/}
                 <div className="flex lg:flex-row flex-col w-full gap-x-8">
@@ -29,10 +29,7 @@ const Theme = () => {
 
                             <img className='group-hover:scale-125 transition-all duration-500' src={Img} alt='' />
                             <div className='absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50'>
-                                <span className='h1 text-red'>Thème 1</span>
-                            </div>
-                            <div className='absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-500 z-50'>
-                                <span className='text-4x1 text-white'>A découvrir le 13 juin.</span>
+                                <span className='h2 text-white'>A découvrir le 13 juin</span>
                             </div>
                         </div>
                     </div>
@@ -44,10 +41,7 @@ const Theme = () => {
 
                             <img className='group-hover:scale-125 transition-all duration-500' src={Img} alt='' />
                             <div className='absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50'>
-                                <span className='h1 text-red'>Thème 2</span>
-                            </div>
-                            <div className='absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-500 z-50'>
-                                <span className='text-4x1 text-white'>A découvrir le 13 juin</span>
+                                <span className='h2 text-white'>A découvrir le 13 juin</span>
                             </div>
                         </div>
                     </div>
