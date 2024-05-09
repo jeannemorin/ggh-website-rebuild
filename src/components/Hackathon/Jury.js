@@ -55,7 +55,7 @@ const Jury = () => {
           viewport={{once: false, amount: 0.3}}
           className=''>
           <h1 className='h1 text-red'>Notre jury</h1>
-          <h2 className='h2 mb-4'>Découvrez le panel de juré de l'édition !</h2>
+          <h2 className='h3 mb-4'>Découvrez le panel de juré de l'édition !</h2>
           
         </motion.div>
 

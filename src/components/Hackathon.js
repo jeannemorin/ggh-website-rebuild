@@ -8,6 +8,14 @@ import Vision from "./Hackathon/Vision"
 import Header from './Header_Nav/HeaderTopTwoColors';
 import Marquee from "react-fast-marquee";
 
+import Card from "./utils/Card";
+
+/*<Banner />
+        <Vision />
+        <Theme />
+        <Prix />
+        <Jury />
+        <FAQ />*/
 
 const Hackathon = () => {
 
