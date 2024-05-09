@@ -79,7 +79,7 @@
     @apply  text-[#FF5757] font-bold font-primary hover:text-[#dc4b4b];
   }
   .section {
-    @apply py-8 lg:py-24 lg:h-screen flex items-center;
+    @apply py-8 lg:py-24 flex items-center;
   }
   .section-close {
     @apply py-8 lg:py-36 flex items-center;

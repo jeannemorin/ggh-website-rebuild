@@ -46,13 +46,13 @@ const Jury = () => {
     return (
     <section id='jury' className='section'> 
     <div className='container mx-auto'>
-      <div className='h-screen'>
+      <div >
         {/*titre*/}
         <motion.div 
           variants={fadeIn('right',0.3)} 
           initial="hidden" 
           whileInView={'show'} 
-          viewport={{once: true, amount: 0.3}}
+          viewport={{once: false, amount: 0.3}}
           className=''>
           <h1 className='h1 text-red'>Notre jury</h1>
           <h2 className='h2 mb-4'>Découvrez le panel de juré de l'édition !</h2>
@@ -64,7 +64,7 @@ const Jury = () => {
         variants={fadeIn('left',0.3)}
         initial='hidden'
         whileInView={'show'}
-        viewport={{once: true, amount: 0.3}}
+        viewport={{once: false, amount: 0.3}}
         className='flex-1'>
           
         <Jury_Round members={panel} />
