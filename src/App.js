@@ -8,7 +8,9 @@ import Edition0 from './components/Editions/EditionPages/Edition0';
 import Edition1 from './components/Editions/EditionPages/Edition1';
 import Edition2 from './components/Editions/EditionPages/Edition2';
 import Archives from './components/Archives';
-
+import Edition4 from './components/Editions/EditionPages/Edition4';
+import Partnership from './components/Partnership';
+import Night4Inno from './components/Night4Inno';
 
 
 const App = () => {
@@ -21,6 +23,9 @@ const App = () => {
           <Route path="/archives/edition0" element={<Edition0 />} />
           <Route path="/archives/edition1" element={<Edition1 />} />
           <Route path="/archives/edition2" element={<Edition2 />} />
+          <Route path="/archives/edition4" element={<Edition4 />} />
+          <Route path="/partnership" element={<Partnership />} />
+          <Route path="/events/night4innovation" element={<Night4Inno />} />
 
         </Routes>
   );

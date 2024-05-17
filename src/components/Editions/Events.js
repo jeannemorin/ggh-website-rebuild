@@ -9,17 +9,17 @@ import PropTypes from 'prop-types';
 
 const Events = ({events, title, description}) => {
     return (
-    <section id='events' className='section'>
+    <div id={title} className='mt-40 mb-40'>
       <div className="container mx-auto">
+
         <div className='flex flex-col lg:flex-row'>
-          {/*text & image*/}
-          <motion.div 
+          {/*title of the section*/}
+          <motion.div
           variants={fadeIn('right',0.3)}
           initial='hidden'
           whileInView={'show'}
           viewport={{once: false, amount: 0.3}}
-          className='flex-1 lg:bg-events lg:bg-bottom bg-no-repeat 
-          mix-blend-lighten mb-12 lg:mb-0'>
+          className='flex-1 mb-12 lg:mb-0'>
 
             <h2 className='h1 text-accent mb-6'>{title}</h2>
             <h3 className='h3 max-w-[455px] mb-16 leading-8'>{description}</h3>
@@ -36,7 +36,7 @@ const Events = ({events, title, description}) => {
           className='flex-1'>
             {/*event list*/}
             <div>
-              {events.map((event, index) => {
+              {events.toReversed().map((event, index) => {
                 return <a href={event.href} smooth={true}>
                   <div className='border-b border-black h-[146px] mb-[38px] flex'key={index}>
                     <div className='max-w-[476px]'>
@@ -44,7 +44,7 @@ const Events = ({events, title, description}) => {
                       <p className='font-secondary leading-tight'>{event.description}</p>
                     </div>
                     
-                    {event.href ? <div className='flex flex-col flex-1 items-center'>
+                    {event.link && event.href ? <div className='flex flex-col flex-1 items-center'>
                       <a href={event.href} className='btn w-9 h-9 mb-[42px] flex justify-center items-center'>
                         <BsArrowUpRight />
                       </a>
@@ -61,7 +61,7 @@ const Events = ({events, title, description}) => {
         </div>
       </div>
   
-    </section>
+    </div>
     );
   };
   
