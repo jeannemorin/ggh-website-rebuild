@@ -1,10 +1,8 @@
 import React from 'react';
 
-import Marquee from "react-fast-marquee";
-
 import { Link } from 'react-scroll';
 
-import Image from '../../assets/hackathon/computer.png';
+import Image from '../../assets/flower.png';
 
 
 import {motion} from 'framer-motion';
