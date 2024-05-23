@@ -58,16 +58,30 @@ const talks=[
       name: 'Gotta Go Talk #2 : Découvrir STATION F',
       description: 'Speaker : Ethan Safar, CEO @Payconsent - Février 2024',
     },
+  {
+    name: 'Gotta Go Talk #3 : Etre étudiant & entrepreneur',
+    description: 'Speaker : Loic Guillebeau, Founder @BeyondTheBracket - Mai 2024',
+  },
 ]
+
+const night4inno=[
+  {
+    name: 'Night 4 Innovation #1',
+    description: 'Avec 7 startups incubées chez Station F - Mai 2024',
+    link: 'Découvrir',
+    href:"events/night4innovation"
+  }]
 
 const Archives = () => {
   return (
     <div>
         <Header />
         <UnderHeader />
+        <Events events={night4inno} title="Night 4 Innovation" description="Une soirée pour découvrir des startups innovantes."/>
         <Events events={hackathons} title="Hackathons" description="Des Hackathons, nos évènements phares depuis mai 2021 !"/>
         <Events events={talks} title="Talks" description="Des moments d'échanges uniques avec des Entrepreneurs."/>
         <Events events={afterworks} title="Afterworks" description="Des afterworks pour découvrir des technologies et rencontrer des startups."/>
+        
 
         <FooterSimple />
    </div>

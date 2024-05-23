@@ -51,7 +51,7 @@ const DisplayRound = ({items}) => {
     return (
         <div className='py-12'>
             <div className="container mx-auto">
-                <div className='grid grid-cols-2 gap-y-16 lg:grid-cols-4'>
+                <div className='grid grid-cols-1 gap-y-16 lg:grid-cols-4'>
 
                     {items.map((item, index) => {  
                         return (<div className='flex flex-col items-center' key={index}>

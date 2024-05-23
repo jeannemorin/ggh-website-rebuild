@@ -21,7 +21,7 @@ const Events = ({events, title, description}) => {
           viewport={{once: false, amount: 0.3}}
           className='flex-1 mb-12 lg:mb-0'>
 
-            <h2 className='h1 text-accent mb-6'>{title}</h2>
+            <h2 className='h1 text-accent mb-6 max-w-[455px]'>{title}</h2>
             <h3 className='h3 max-w-[455px] mb-16 leading-8'>{description}</h3>
 
           </motion.div>
