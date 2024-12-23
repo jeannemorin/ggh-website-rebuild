@@ -43,7 +43,7 @@ const About = () => {
 
                 {/*button*/}
                 <div className='flex gap-x-8 items-center'>
-                  <a href='https://www.helloasso.com/associations/gotta-go-hack/evenements/hackathon-gotta-go-hack-edition-5' smooth={true} target="_blank" rel="noreferrer"><button className='btn btn-lg'>Participer</button></a>
+                  <a href='https://www.helloasso.com/associations/gotta-go-hack/evenements/hackhaton-gotta-go-hack-edition-2025' smooth={true} target="_blank" rel="noreferrer"><button className='btn btn-lg'>Participer</button></a>
 
                 </div>
               </motion.div>
